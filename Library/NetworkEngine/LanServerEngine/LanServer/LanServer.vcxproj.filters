@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="CContents.cpp">
+      <Filter>Contents</Filter>
+    </ClCompile>
+    <ClCompile Include="CLanServer.cpp">
+      <Filter>LanServer</Filter>
+    </ClCompile>
+    <ClCompile Include="LanServer.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>PCH</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CContents.h">
+      <Filter>Contents</Filter>
+    </ClInclude>
+    <ClInclude Include="CLanServer.h">
+      <Filter>LanServer</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\ServerControl.h">
+      <Filter>ServerControl</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>PCH</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Contents">
+      <UniqueIdentifier>{ccc674a7-8d8b-4383-802b-d25a3ead1e00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{5c9183d5-971f-4f57-bfeb-c3972d882e65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PCH">
+      <UniqueIdentifier>{ff6ff67f-47d9-4488-b804-1724927d5006}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerControl">
+      <UniqueIdentifier>{0a78028c-6489-4fe6-be7c-bf3d20ef0da4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LanServer">
+      <UniqueIdentifier>{566ffa6c-022d-4d5e-b66e-ee0fe63ab05b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

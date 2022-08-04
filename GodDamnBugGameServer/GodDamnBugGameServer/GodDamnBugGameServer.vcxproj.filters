@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="PCH">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Contents">
+      <UniqueIdentifier>{5d903c04-e1a1-4800-8f17-424d7d0d5079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\GodDamnBug">
+      <UniqueIdentifier>{430d93a0-a62e-4a6f-96b3-0aa742899290}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Object">
+      <UniqueIdentifier>{f75f9318-ca2e-455d-8653-dc2b6b6b5902}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\GodDamnBugDefine">
+      <UniqueIdentifier>{415aebee-2d0c-4ab2-b1bd-40722708b997}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\LanMonitoringClient">
+      <UniqueIdentifier>{060f62b7-2aef-4f36-9df1-efdafcab56e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\LanLoginClient">
+      <UniqueIdentifier>{fab97168-2949-4767-ab8b-357e77527303}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Object\Player">
+      <UniqueIdentifier>{da65b079-e8a8-411c-8f83-4adb7b48c079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Object\Monster">
+      <UniqueIdentifier>{853c7423-294a-43f7-8a92-1d4aeb8886e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Object\Cristal">
+      <UniqueIdentifier>{da6b5eb4-cb8d-4811-85a3-ded97bfa50d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Object\DBWriteJob">
+      <UniqueIdentifier>{b5a5f5c2-fe0d-45ae-94ef-062585c691d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Object\DBWriteJob\LoginDBWriteJob">
+      <UniqueIdentifier>{fc01971f-2327-44ba-ba8b-211d453658cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Object\DBWriteJob\LogoutDBWriteJob">
+      <UniqueIdentifier>{0dc3c43f-1e29-40cd-8aa3-7fdfe3b13df2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Object\DBWriteJob\DieDBWriteJob">
+      <UniqueIdentifier>{fc5511e6-5794-40ad-bad3-588c09282047}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Object\DBWriteJob\CreateCharacterDBWriteJob">
+      <UniqueIdentifier>{dcbc3c95-354c-465c-9b76-81b174f17acb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Object\DBWriteJob\RestartDBWriteJob">
+      <UniqueIdentifier>{8cc17ab3-31a1-4a0a-b423-10302e5a2fea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Object\DBWriteJob\CristalPickDBWriteJob">
+      <UniqueIdentifier>{f5777285-ad37-4c7d-adbb-d34863e6b3a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Object\DBWriteJob\HPRecoveryDBWriteJob">
+      <UniqueIdentifier>{fa671f0a-a0ba-4e76-9564-c045e0c97ef9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Object\BaseObject">
+      <UniqueIdentifier>{40d2e860-6381-4b74-83be-e5504dfd259a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Object\ObjectManager">
+      <UniqueIdentifier>{b537b177-3504-418d-80ac-3377e3f4c97f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerController">
+      <UniqueIdentifier>{80d321fa-e1c2-4559-aad7-125613dd6115}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol">
+      <UniqueIdentifier>{2497184b-1c89-4500-91c7-b7b224822d93}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GodDamnBugGameServer.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="CGodDamnBug.cpp">
+      <Filter>Contents\GodDamnBug</Filter>
+    </ClCompile>
+    <ClCompile Include="CLanLoginClient.cpp">
+      <Filter>Contents\LanLoginClient</Filter>
+    </ClCompile>
+    <ClCompile Include="CLanMonitoringClient.cpp">
+      <Filter>Contents\LanMonitoringClient</Filter>
+    </ClCompile>
+    <ClCompile Include="CDBWriteJob.cpp">
+      <Filter>Contents\Object\DBWriteJob</Filter>
+    </ClCompile>
+    <ClCompile Include="CLoginDBWriteJob.cpp">
+      <Filter>Contents\Object\DBWriteJob\LoginDBWriteJob</Filter>
+    </ClCompile>
+    <ClCompile Include="CLogoutDBWriteJob.cpp">
+      <Filter>Contents\Object\DBWriteJob\LogoutDBWriteJob</Filter>
+    </ClCompile>
+    <ClCompile Include="CDieDBWriteJob.cpp">
+      <Filter>Contents\Object\DBWriteJob\DieDBWriteJob</Filter>
+    </ClCompile>
+    <ClCompile Include="CCreateCharacterDBWriteJob.cpp">
+      <Filter>Contents\Object\DBWriteJob\CreateCharacterDBWriteJob</Filter>
+    </ClCompile>
+    <ClCompile Include="CRestartDBWriteJob.cpp">
+      <Filter>Contents\Object\DBWriteJob\RestartDBWriteJob</Filter>
+    </ClCompile>
+    <ClCompile Include="CCristalPickDBWriteJob.cpp">
+      <Filter>Contents\Object\DBWriteJob\CristalPickDBWriteJob</Filter>
+    </ClCompile>
+    <ClCompile Include="CHPRecoveryDBWriteJob.cpp">
+      <Filter>Contents\Object\DBWriteJob\HPRecoveryDBWriteJob</Filter>
+    </ClCompile>
+    <ClCompile Include="CObjectManager.cpp">
+      <Filter>Contents\Object\ObjectManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\CBaseObject.cpp">
+      <Filter>Contents\Object\BaseObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\CCristal.cpp">
+      <Filter>Contents\Object\Cristal</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\CMonster.cpp">
+      <Filter>Contents\Object\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\CPlayer.cpp">
+      <Filter>Contents\Object\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>PCH</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CServerController.h">
+      <Filter>ServerController</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Protocol\GodDamnBug\CommonProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="CGodDamnBug.h">
+      <Filter>Contents\GodDamnBug</Filter>
+    </ClInclude>
+    <ClInclude Include="GodDamnBugDifine.h">
+      <Filter>Contents\GodDamnBugDefine</Filter>
+    </ClInclude>
+    <ClInclude Include="CLanLoginClient.h">
+      <Filter>Contents\LanLoginClient</Filter>
+    </ClInclude>
+    <ClInclude Include="CLanMonitoringClient.h">
+      <Filter>Contents\LanMonitoringClient</Filter>
+    </ClInclude>
+    <ClInclude Include="CDBWriteJob.h">
+      <Filter>Contents\Object\DBWriteJob</Filter>
+    </ClInclude>
+    <ClInclude Include="CLoginDBWriteJob.h">
+      <Filter>Contents\Object\DBWriteJob\LoginDBWriteJob</Filter>
+    </ClInclude>
+    <ClInclude Include="CLogoutDBWriteJob.h">
+      <Filter>Contents\Object\DBWriteJob\LogoutDBWriteJob</Filter>
+    </ClInclude>
+    <ClInclude Include="CDieDBWriteJob.h">
+      <Filter>Contents\Object\DBWriteJob\DieDBWriteJob</Filter>
+    </ClInclude>
+    <ClInclude Include="CCreateCharacterDBWriteJob.h">
+      <Filter>Contents\Object\DBWriteJob\CreateCharacterDBWriteJob</Filter>
+    </ClInclude>
+    <ClInclude Include="CRestartDBWriteJob.h">
+      <Filter>Contents\Object\DBWriteJob\RestartDBWriteJob</Filter>
+    </ClInclude>
+    <ClInclude Include="CCristalPickDBWriteJob.h">
+      <Filter>Contents\Object\DBWriteJob\CristalPickDBWriteJob</Filter>
+    </ClInclude>
+    <ClInclude Include="CHPRecoveryDBWriteJob.h">
+      <Filter>Contents\Object\DBWriteJob\HPRecoveryDBWriteJob</Filter>
+    </ClInclude>
+    <ClInclude Include="CObjectManager.h">
+      <Filter>Contents\Object\ObjectManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\CBaseObject.h">
+      <Filter>Contents\Object\BaseObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\CCristal.h">
+      <Filter>Contents\Object\Cristal</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\CMonster.h">
+      <Filter>Contents\Object\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\CPlayer.h">
+      <Filter>Contents\Object\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>PCH</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,53 @@
+[NetServer] [2021-02-13 19:20:06] [ERROR] [00000001] : [UpdateAcceptThread] Accept, Error Code : 10004
+
+[NetServer] [2021-02-13 19:20:56] [ERROR] [00000001] : [UpdateAcceptThread] Accept, Error Code : 10004
+
+[NetServer] [2021-02-13 19:21:39] [ERROR] [00000001] : [UpdateAcceptThread] Accept, Error Code : 10004
+
+[NetServer] [2021-02-13 19:22:25] [ERROR] [00000001] : [UpdateAcceptThread] Accept, Error Code : 10004
+
+[NetServer] [2021-02-13 19:23:18] [ERROR] [00000001] : [UpdateAcceptThread] Accept, Error Code : 10004
+
+[NetServer] [2021-02-13 19:23:21] [ERROR] [00000002] : [UpdateWorkerThread] pOverlapped is nullptr, Error Code : 0
+
+
+[NetServer] [2021-02-13 19:23:21] [ERROR] [00000004] : [UpdateWorkerThread] pOverlapped is nullptr, Error Code : 0
+
+
+[NetServer] [2021-02-13 19:23:21] [ERROR] [00000004] : [UpdateWorkerThread] pOverlapped is nullptr, Error Code : 0
+
+
+[NetServer] [2021-02-25 05:52:34] [ERROR] [00000001] : [UpdateAcceptThread] Accept, Error Code : 10004
+
+[NetServer] [2021-02-25 05:52:34] [ERROR] [00000003] : [UpdateWorkerThread] pOverlapped is nullptr, Error Code : 0
+
+
+[NetServer] [2021-02-25 05:52:34] [ERROR] [00000003] : [UpdateWorkerThread] pOverlapped is nullptr, Error Code : 0
+
+
+[NetServer] [2021-02-25 05:52:34] [ERROR] [00000004] : [UpdateWorkerThread] pOverlapped is nullptr, Error Code : 0
+
+
+[NetServer] [2021-02-26 00:46:53] [ERROR] [00000003] : [UpdateWorkerThread] pOverlapped is nullptr, Error Code : 0
+
+
+[NetServer] [2021-02-26 00:46:53] [ERROR] [00000003] : [UpdateWorkerThread] pOverlapped is nullptr, Error Code : 0
+
+
+[NetServer] [2021-02-26 00:46:53] [ERROR] [00000003] : [UpdateWorkerThread] pOverlapped is nullptr, Error Code : 0
+
+
+[NetServer] [2021-02-26 18:09:45] [ERROR] [00000003] : [releaseSession] Debug, Error Code : 64
+
+[NetServer] [2021-02-26 18:09:45] [ERROR] [00000003] : [releaseSession] Debug, Error Code : 64
+
+[NetServer] [2021-02-26 18:10:59] [ERROR] [00000003] : [releaseSession] Debug, Error Code : 64
+
+[NetServer] [2021-02-26 18:10:59] [ERROR] [00000003] : [releaseSession] Debug, Error Code : 64
+
+[NetServer] [2021-02-27 17:13:05] [ERROR] [00000001] : [UpdateAcceptThread] Accept, Error Code : 10035
+
+[NetServer] [2021-02-27 17:13:11] [ERROR] [00000001] : [UpdateAcceptThread] Accept, Error Code : 10035
+
+[NetServer] [2021-02-27 17:21:39] [ERROR] [00000001] : [UpdateAcceptThread] Accept, Error Code : 10035
+

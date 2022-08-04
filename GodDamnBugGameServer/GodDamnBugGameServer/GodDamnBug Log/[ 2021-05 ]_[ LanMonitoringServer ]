@@ -1,0 +1,14 @@
+[LanMonitoringServer] [2021-05-03 14:09:26] [ERROR] [00000001] : [DBWriteThread] Error Code : 0, Error Message : 
+
+[LanMonitoringServer] [2021-05-08 01:04:28] [ERROR] [00000001] : [OnStartAuthenticThread] GameDB Connect Error Code : 2005, Error Message : Unknown MySQL server host 'procademyserver.iptime.org' (0)
+
+[LanMonitoringServer] [2021-05-08 01:04:28] [ERROR] [00000002] : [OnStartAuthenticThread] AccountDB Connect Error Code : 2005, Error Message : Unknown MySQL server host 'procademyserver.iptime.org' (0)
+
+[LanMonitoringServer] [2021-05-10 16:01:14] [ERROR] [00000001] : [OnStartAuthenticThread] GameDB Connect Error Code : 2003, Error Message : Can't connect to MySQL server on 'procademyserver.iptime.org' (10060)
+
+[LanMonitoringServer] [2021-05-10 16:01:14] [ERROR] [00000002] : [OnStartAuthenticThread] AccountDB Connect Error Code : 2003, Error Message : Can't connect to MySQL server on 'procademyserver.iptime.org' (10060)
+
+[LanMonitoringServer] [2021-05-24 18:22:15] [ERROR] [00000007] : [OnStartAuthenticThread] AccountDB Connect Error Code : 2003, Error Message : Can't connect to MySQL server on 'procademyserver.iptime.org' (10060)
+
+[LanMonitoringServer] [2021-05-24 18:22:15] [ERROR] [00000008] : [OnStartAuthenticThread] GameDB Connect Error Code : 2003, Error Message : Can't connect to MySQL server on 'procademyserver.iptime.org' (10060)
+

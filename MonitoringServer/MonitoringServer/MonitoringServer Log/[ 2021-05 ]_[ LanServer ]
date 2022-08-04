@@ -1,0 +1,5 @@
+[LanServer] [2021-05-06 18:43:32] [ERROR] [00000003] : [AcceptThread] Accept, Error Code : 10004
+
+[LanServer] [2021-05-06 18:43:32] [ERROR] [00000004] : [WorkerThread] pOverlapped is nullptr, Error Code : 0
+
+

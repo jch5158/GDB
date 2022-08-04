@@ -1,0 +1,17 @@
+[LanServer] [2021-03-21 22:17:43] [ERROR] [00000001] : [setupSocket] bindSocket Error Code : 10048
+
+[LanServer] [2021-03-26 18:31:18] [ERROR] [00000003] : [UpdateAcceptThread] Accept, Error Code : 10004
+
+[LanServer] [2021-03-26 18:31:18] [ERROR] [00000004] : [UpdateWorkerThread] pOverlapped is nullptr, Error Code : 0
+
+
+[LanServer] [2021-03-26 18:31:56] [ERROR] [00000003] : [UpdateAcceptThread] Accept, Error Code : 10004
+
+[LanServer] [2021-03-26 18:31:56] [ERROR] [00000004] : [UpdateWorkerThread] pOverlapped is nullptr, Error Code : 0
+
+
+[LanServer] [2021-03-26 18:33:53] [ERROR] [00000003] : [UpdateAcceptThread] Accept, Error Code : 10004
+
+[LanServer] [2021-03-26 18:33:53] [ERROR] [00000004] : [UpdateWorkerThread] pOverlapped is nullptr, Error Code : 0
+
+

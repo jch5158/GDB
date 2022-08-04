@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="main">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="PCH">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="LockFreeObjectFreeList">
+      <UniqueIdentifier>{b8258b40-eefd-4b0a-8404-5abd6aebbc6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{15992e47-c521-44bb-a3e4-b31402e0bee1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ObjectFreeList.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="CTest1.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>PCH</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>PCH</Filter>
+    </ClInclude>
+    <ClInclude Include="CLockFreeObjectFreeList.h">
+      <Filter>LockFreeObjectFreeList</Filter>
+    </ClInclude>
+    <ClInclude Include="CTest1.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="CTLSLockFreeObjectFreeList.h">
+      <Filter>LockFreeObjectFreeList</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

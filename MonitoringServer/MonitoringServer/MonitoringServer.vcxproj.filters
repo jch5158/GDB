@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="PCH">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Library">
+      <UniqueIdentifier>{85cbf0f8-74a5-4bb0-b382-08cd173bfcb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Network">
+      <UniqueIdentifier>{97207aa9-ceed-4ce3-9437-bee2fc0be526}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Network\Message">
+      <UniqueIdentifier>{bb2181b3-487c-4884-aaaf-91164993271b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Network\RingBuffer">
+      <UniqueIdentifier>{df7cc6f5-6300-4956-9b0a-b09e01e17368}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Network\NetServer">
+      <UniqueIdentifier>{959a48f9-461e-43c8-9f8e-28f4400a1456}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Dump">
+      <UniqueIdentifier>{dcece743-2ed1-4006-8e91-61011bd996a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\CPUProfiler">
+      <UniqueIdentifier>{de445240-c7db-4ee4-8ae1-40dae87c11a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\HardwareProfiler">
+      <UniqueIdentifier>{de028fe8-f219-4615-b6bc-af2ff2ce21e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\LockFreeObjectFreeList">
+      <UniqueIdentifier>{16a4ece1-3742-435f-baad-0d61f121cf01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\LockFreeQueue">
+      <UniqueIdentifier>{32e63160-ff9e-4e3d-a3d5-6f29c694c181}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\LockFreeStack">
+      <UniqueIdentifier>{1a197ad6-ee48-4ad6-8554-cd6770222b96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\SystemLog">
+      <UniqueIdentifier>{22d38800-9b63-42b5-bc17-455fe3f41153}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\PerformanceProfiler">
+      <UniqueIdentifier>{0586996c-82b6-4427-8274-e29502c3789a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Parser">
+      <UniqueIdentifier>{8613fc48-7d36-4325-b13e-388965e076c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents">
+      <UniqueIdentifier>{b676d0da-b77e-4eea-adcb-c2958add51f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Contents\NetMonitoringServer">
+      <UniqueIdentifier>{f7e63543-8bb4-417d-9e3c-ed4148013793}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\LanMonitoringServer">
+      <UniqueIdentifier>{14be93fa-ce33-4f5f-ad39-94eedbea7dea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Network\LanServer">
+      <UniqueIdentifier>{2f992049-b0d4-4642-b6fb-a074d795ee9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\DBConnector">
+      <UniqueIdentifier>{71b45b5f-3fbd-49db-9594-784267ecb615}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerControl">
+      <UniqueIdentifier>{9e08e9dd-61f0-4f05-9fdc-bad8041e4185}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProfileDataType">
+      <UniqueIdentifier>{a1c2beee-5f5a-4055-a2f1-29bd4865fa58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Network\Protocol">
+      <UniqueIdentifier>{fa23500f-8793-451d-846b-1f591bf02885}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MonitoringServer.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>PCH</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\PerformanceProfiler\PerformanceProfiler\CPerformanceProfiler.cpp">
+      <Filter>Library\PerformanceProfiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\NetworkEngine\NetServerEngine\NetServer\CNetServer.cpp">
+      <Filter>Library\Network\NetServer</Filter>
+    </ClCompile>
+    <ClCompile Include="CNetMonitoringServer.cpp">
+      <Filter>Contents\NetMonitoringServer</Filter>
+    </ClCompile>
+    <ClCompile Include="CLanMonitoringServer.cpp">
+      <Filter>Contents\LanMonitoringServer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\NetworkEngine\LanServerEngine\LanServer\CLanServer.cpp">
+      <Filter>Library\Network\LanServer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>PCH</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\CPUProfiler\CPUProfiler\CCPUProfiler.h">
+      <Filter>Library\CPUProfiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\DumpLibrary\DumpLibrary\CCrashDump.h">
+      <Filter>Library\Dump</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\LockFreeObjectFreeList\ObjectFreeListLib\CLockFreeObjectFreeList.h">
+      <Filter>Library\LockFreeObjectFreeList</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\LockFreeQueue\LockFreeQueueLib\CLockFreeQueue.h">
+      <Filter>Library\LockFreeQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\LockFreeStack\LockFreeStackLib\CLockFreeStack.h">
+      <Filter>Library\LockFreeStack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\MessageLibrary\MessageLibrary\CMessage.h">
+      <Filter>Library\Network\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\RingBufferLibrary\RingBufferLib\CTemplateRingBuffer.h">
+      <Filter>Library\Network\RingBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\RingBufferLibrary\RingBufferLib\CRingBuffer.h">
+      <Filter>Library\Network\RingBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\HardwareProfilerLibrary\HardwareProfilerLibrary\CHardwareProfiler.h">
+      <Filter>Library\HardwareProfiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\ParserLibrary\ParserLibrary\CParser.h">
+      <Filter>Library\Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\SystemLogLibrary\SystemLogLibrary\CSystemLog.h">
+      <Filter>Library\SystemLog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\PerformanceProfiler\PerformanceProfiler\CPerformanceProfiler.h">
+      <Filter>Library\PerformanceProfiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\NetworkEngine\NetServerEngine\NetServer\CNetServer.h">
+      <Filter>Library\Network\NetServer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\프로카데미 학습 자료\모니터링 클라이언트 &amp; 서버 프로젝트\CommonProtocol_monitor.h">
+      <Filter>Library\Network\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="CNetMonitoringServer.h">
+      <Filter>Contents\NetMonitoringServer</Filter>
+    </ClInclude>
+    <ClInclude Include="Protocol.h">
+      <Filter>Library\Network\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="CLanMonitoringServer.h">
+      <Filter>Contents\LanMonitoringServer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\NetworkEngine\LanServerEngine\LanServer\CLanServer.h">
+      <Filter>Library\Network\LanServer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\DBConnectorLibrary\DBConnectorLibrary\CDBConnector.h">
+      <Filter>Library\DBConnector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\LockFreeObjectFreeList\ObjectFreeListLib\CTLSLockFreeObjectFreeList.h">
+      <Filter>Library\LockFreeObjectFreeList</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerControler.h">
+      <Filter>ServerControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Protocol\GodDamnBug\CommonProtocol.h">
+      <Filter>Library\Network\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ProfileDataType\GodDamnBug\ProfileDataType.h">
+      <Filter>ProfileDataType</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

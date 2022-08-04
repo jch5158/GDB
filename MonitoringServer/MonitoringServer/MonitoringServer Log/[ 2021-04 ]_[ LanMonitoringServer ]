@@ -1,0 +1,6 @@
+[LanMonitoringServer] [2021-04-07 15:10:43] [ERROR] [00000001] : [saveChatServerProfile] Error Code : 1292, Error Message
+
+[LanMonitoringServer] [2021-04-07 15:11:24] [ERROR] [00000001] : [saveChatServerProfile] Error Code : 1292, Error Message : Incorrect datetime value: '' for column 'server_start_time' at row 1
+
+[LanMonitoringServer] [2021-04-13 18:54:55] [ERROR] [00000001] : [saveChatServerProfile] Error Code : 1292, Error Message : Incorrect datetime value: '' for column 'server_start_time' at row 1
+

@@ -1,0 +1,6 @@
+[MonitoringServer] [2021-03-21 22:17:05] [ERROR] [00000001] : [ServerOn] Lan Server Start is Failed
+
+[MonitoringServer] [2021-03-21 22:17:43] [ERROR] [00000002] : [ServerOn] Lan Server Start is Failed
+
+[MonitoringServer] [2021-03-26 13:18:30] [ERROR] [00000001] : [ParseNetServerConfigFile] GAME_SERVER_NO Not Found
+

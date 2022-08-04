@@ -1,0 +1,2 @@
+[LanMonitoringServer] [2021-07-03 18:27:47] [ERROR] [00000003] : [OnStartAuthenticThread] AccountDB Connect Error Code : 2003, Error Message : Can't connect to MySQL server on '127.0.0.1' (10061)
+

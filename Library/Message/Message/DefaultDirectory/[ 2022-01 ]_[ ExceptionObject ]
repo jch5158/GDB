@@ -1,0 +1,65 @@
+[ExceptionObject] [2022-01-13 17:18:08] [ERROR] [00000001] : float [ size : 0 ]
+
+[ExceptionObject] [2022-01-13 17:18:43] [ERROR] [00000001] : float [ size : 0 ]
+
+[ExceptionObject] [2022-01-13 17:18:43] [ERROR] [00000002] : float [ size : 0 ]
+
+[ExceptionObject] [2022-01-13 17:18:43] [ERROR] [00000003] : float [ size : 0 ]
+
+[ExceptionObject] [2022-01-13 17:19:36] [ERROR] [00000001] : int [ size : 8 ]
+   0x0000013DE950D780   69 6e 74 00 5c 50 72 6f 
+
+[ExceptionObject] [2022-01-13 17:19:36] [ERROR] [00000002] : int [ size : 8 ]
+   0x0000013DE950D780   69 6e 74 00 5c 50 72 6f 
+
+[ExceptionObject] [2022-01-13 17:19:36] [ERROR] [00000003] : int [ size : 8 ]
+   0x0000013DE950D780   69 6e 74 00 5c 50 72 6f 
+
+[ExceptionObject] [2022-01-13 17:20:40] [ERROR] [00000001] : int
+ [ size : 8 ]
+   0x000001D1DB0CD700   43 00 00 00 00 00 00 00 
+
+[ExceptionObject] [2022-01-13 17:20:40] [ERROR] [00000002] : int
+ [ size : 8 ]
+   0x000001D1DB0CD700   43 00 00 00 00 00 00 00 
+
+[ExceptionObject] [2022-01-13 17:20:40] [ERROR] [00000003] : int
+ [ size : 8 ]
+   0x000001D1DB0CD700   43 00 00 00 00 00 00 00 
+
+[ExceptionObject] [2022-01-13 17:21:44] [ERROR] [00000001] : int [ size : 20 ]
+   0x000001C0F9D9E040   00 00 00 00 00 00 00 00 
+   0x000001C0F9D9E048   00 00 00 00 00 00 00 00 
+   0x000001C0F9D9E050   00 00 00 00 00 00 00 00 
+
+[ExceptionObject] [2022-01-13 17:21:44] [ERROR] [00000002] : int [ size : 20 ]
+   0x000001C0F9D9E040   00 00 00 00 00 00 00 00 
+   0x000001C0F9D9E048   00 00 00 00 00 00 00 00 
+   0x000001C0F9D9E050   00 00 00 00 00 00 00 00 
+
+[ExceptionObject] [2022-01-13 17:21:44] [ERROR] [00000003] : int [ size : 20 ]
+   0x000001C0F9D9E040   00 00 00 00 00 00 00 00 
+   0x000001C0F9D9E048   00 00 00 00 00 00 00 00 
+   0x000001C0F9D9E050   00 00 00 00 00 00 00 00 
+
+[ExceptionObject] [2022-01-13 17:23:47] [ERROR] [00000001] : int [ size : 0 ]
+
+[ExceptionObject] [2022-01-13 17:23:47] [ERROR] [00000002] : int [ size : 0 ]
+
+[ExceptionObject] [2022-01-13 17:23:47] [ERROR] [00000003] : int [ size : 0 ]
+
+[ExceptionObject] [2022-01-13 17:36:16] [ERROR] [00000001] : int>> [ size : 0 ]
+
+[ExceptionObject] [2022-01-13 17:36:16] [ERROR] [00000002] : int>> [ size : 0 ]
+
+[ExceptionObject] [2022-01-13 17:36:16] [ERROR] [00000003] : int>> [ size : 0 ]
+
+[ExceptionObject] [2022-01-13 17:44:31] [ERROR] [00000001] : int << [ size : 8 ]
+   0x0000019F4ED4D750   1e 00 00 00 1e 00 00 00 
+
+[ExceptionObject] [2022-01-13 17:44:31] [ERROR] [00000002] : int << [ size : 8 ]
+   0x0000019F4ED4D750   1e 00 00 00 1e 00 00 00 
+
+[ExceptionObject] [2022-01-13 17:44:31] [ERROR] [00000003] : int << [ size : 8 ]
+   0x0000019F4ED4D750   1e 00 00 00 1e 00 00 00 
+

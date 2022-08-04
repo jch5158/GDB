@@ -1,0 +1,6 @@
+[LoginServer] [2021-05-07 15:46:54] [ERROR] [00000001] : [LanLoginServerOn] Start Failed
+
+[LoginServer] [2021-05-08 00:22:13] [ERROR] [00000001] : [SetupLogSystem] LogLevel Value Error : LOG_LEVEL_ERROR 
+
+[LoginServer] [2021-05-08 02:32:26] [ERROR] [00000002] : [LoginServerOn] Start Failed
+

@@ -1,0 +1,6 @@
+[CGodDamnBug] [2021-05-07 23:40:35] [ERROR] [00000001] : [connectGameDB] GameDB Disconnect Failed
+
+[CGodDamnBug] [2021-05-07 23:40:35] [ERROR] [00000002] : [connectAccountDB] AccountDB Disconnect Failed
+
+[CGodDamnBug] [2021-05-24 15:24:51] [ERROR] [00000001] : [chaeckMonsterMoveRange] mActivityArea Value Error : 555
+

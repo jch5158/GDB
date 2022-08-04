@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="PCH">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Library">
+      <UniqueIdentifier>{14ec11cb-45aa-423e-9243-67c37d12e95f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Network">
+      <UniqueIdentifier>{3c6a338f-92a5-43e3-bb4d-a8839f1dff68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Network\Message">
+      <UniqueIdentifier>{cd4ad183-be10-4fa3-a217-ea39a274438a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\RingBuffer">
+      <UniqueIdentifier>{c019b6fd-4ff7-4d1a-8be0-230f08144b06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\LockFreeQueue">
+      <UniqueIdentifier>{8cbc7fbf-b8ac-4dbc-86d4-601d8e0ab33b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\LockFreeStack">
+      <UniqueIdentifier>{f5dc5581-1695-4a1a-8e4a-7e8365734a0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\LockFreeObjectFreeList">
+      <UniqueIdentifier>{b97c02fd-1ee8-4153-8817-d4d9f42625ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\CrashDump">
+      <UniqueIdentifier>{bad86eac-65cd-4c8e-8ce3-20d977d94a45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\SystemLog">
+      <UniqueIdentifier>{92290a70-7c05-4c9b-821a-b10ee53494d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Parse">
+      <UniqueIdentifier>{7ce9112f-2298-45ff-8928-7440988c5af6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Network\Protocol">
+      <UniqueIdentifier>{9bc28ebd-90dc-430f-ad89-22000ffd4a9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Network\NetServer">
+      <UniqueIdentifier>{d9595fb8-3d44-4f91-8e08-cc7a904b8b4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents">
+      <UniqueIdentifier>{6adc4738-ace8-4031-9836-95f01d45cdaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\DBConnector">
+      <UniqueIdentifier>{408a860f-9297-4836-b31c-84ff01c7c57c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Object">
+      <UniqueIdentifier>{dee0c8ea-d5fe-464a-b1d9-fc07120bc6eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\NetLoginServer">
+      <UniqueIdentifier>{9c8da62a-7094-4e1c-a145-2238f2a0ba37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\RedisLibrary">
+      <UniqueIdentifier>{b127ae66-8f8a-4b61-b170-691e8acdcf7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Network\LanClient">
+      <UniqueIdentifier>{a27267c3-96a9-4d08-a699-723619732431}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Network\LanServer">
+      <UniqueIdentifier>{9c4c4ab0-84f9-4a5c-9f42-bd5812ff04c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\LanMonitoringClient">
+      <UniqueIdentifier>{90f774e0-7c28-442c-b258-382603de5c7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\LanLoginServer">
+      <UniqueIdentifier>{090d610b-b8ba-424f-b9dc-30ccd20329cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\CPUProfiler">
+      <UniqueIdentifier>{2dcd8c75-ba0e-42e8-8ee4-98559f2b1ec0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\HardwareProfiler">
+      <UniqueIdentifier>{52532f04-7587-4240-a5b7-df11ad054a3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\CriticalSection">
+      <UniqueIdentifier>{33c8519c-78bd-4c04-84be-0209bd5d1080}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\SRWLock">
+      <UniqueIdentifier>{a76e3cd2-111e-4386-9b1d-53e34a197785}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\PerformanceProfiler">
+      <UniqueIdentifier>{adf3a4ad-9a05-49b7-b417-43f610fc6c6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controller">
+      <UniqueIdentifier>{24bf8294-65b4-422f-96a3-b63dd1628e7c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GodDamnBugLoginServer.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>PCH</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\NetworkEngine\NetServerEngine\NetServer\CNetServer.cpp">
+      <Filter>Library\Network\NetServer</Filter>
+    </ClCompile>
+    <ClCompile Include="CNetLoginServer.cpp">
+      <Filter>Contents\NetLoginServer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\NetworkEngine\LanClientEngine\LanClientEngine\CLanClient.cpp">
+      <Filter>Library\Network\LanClient</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\NetworkEngine\LanServerEngine\LanServer\CLanServer.cpp">
+      <Filter>Library\Network\LanServer</Filter>
+    </ClCompile>
+    <ClCompile Include="CLanMonitoringClient.cpp">
+      <Filter>Contents\LanMonitoringClient</Filter>
+    </ClCompile>
+    <ClCompile Include="CLanLoginServer.cpp">
+      <Filter>Contents\LanLoginServer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\PerformanceProfiler\PerformanceProfiler\CTLSPerformanceProfiler.cpp">
+      <Filter>Library\PerformanceProfiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\PerformanceProfiler\PerformanceProfiler\CPerformanceProfiler.cpp">
+      <Filter>Library\PerformanceProfiler</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>PCH</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\LockFreeObjectFreeList\ObjectFreeListLib\CLockFreeObjectFreeList.h">
+      <Filter>Library\LockFreeObjectFreeList</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\LockFreeObjectFreeList\ObjectFreeListLib\CTLSLockFreeObjectFreeList.h">
+      <Filter>Library\LockFreeObjectFreeList</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\LockFreeQueue\LockFreeQueueLib\CLockFreeQueue.h">
+      <Filter>Library\LockFreeQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\LockFreeStack\LockFreeStackLib\CLockFreeStack.h">
+      <Filter>Library\LockFreeStack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\NetworkEngine\NetServerEngine\NetServer\CNetServer.h">
+      <Filter>Library\Network\NetServer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\MessageLibrary\MessageLibrary\CMessage.h">
+      <Filter>Library\Network\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\DumpLibrary\DumpLibrary\CCrashDump.h">
+      <Filter>Library\CrashDump</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\ParserLibrary\ParserLibrary\CParser.h">
+      <Filter>Library\Parse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\SystemLogLibrary\SystemLogLibrary\CSystemLog.h">
+      <Filter>Library\SystemLog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\RingBufferLibrary\RingBufferLib\CRingBuffer.h">
+      <Filter>Library\RingBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\RingBufferLibrary\RingBufferLib\CTemplateRingBuffer.h">
+      <Filter>Library\RingBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="CNetLoginServer.h">
+      <Filter>Contents\NetLoginServer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\DBConnectorLibrary\DBConnectorLibrary\CDBConnector.h">
+      <Filter>Library\DBConnector</Filter>
+    </ClInclude>
+    <ClInclude Include="CServerController.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\DBConnectorLibrary\DBConnectorLibrary\CTLSDBConnector.h">
+      <Filter>Library\DBConnector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Protocol\GodDamnBug\CommonProtocol.h">
+      <Filter>Library\Network\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\RedisLibrary\RedisLibrary\CTLSRedisConnector.h">
+      <Filter>Library\RedisLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\RedisLibrary\RedisLibrary\CRedisConnector.h">
+      <Filter>Library\RedisLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\NetworkEngine\LanClientEngine\LanClientEngine\CLanClient.h">
+      <Filter>Library\Network\LanClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\NetworkEngine\LanServerEngine\LanServer\CLanServer.h">
+      <Filter>Library\Network\LanServer</Filter>
+    </ClInclude>
+    <ClInclude Include="CLanMonitoringClient.h">
+      <Filter>Contents\LanMonitoringClient</Filter>
+    </ClInclude>
+    <ClInclude Include="CLanLoginServer.h">
+      <Filter>Contents\LanLoginServer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\CPUProfiler\CPUProfiler\CCPUProfiler.h">
+      <Filter>Library\CPUProfiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\HardwareProfilerLibrary\HardwareProfilerLibrary\CHardwareProfiler.h">
+      <Filter>Library\HardwareProfiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\CriticalSectionLibrary\CriticalSectionLibrary\CCriticalSection.h">
+      <Filter>Library\CriticalSection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\SRWLockLibrary\SRWLockLibrary\CSRWLockExclusive.h">
+      <Filter>Library\SRWLock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\SRWLockLibrary\SRWLockLibrary\CSRWLockShared.h">
+      <Filter>Library\SRWLock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\PerformanceProfiler\PerformanceProfiler\CTLSPerformanceProfiler.h">
+      <Filter>Library\PerformanceProfiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\PerformanceProfiler\PerformanceProfiler\CPerformanceProfiler.h">
+      <Filter>Library\PerformanceProfiler</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

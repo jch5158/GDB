@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="PCH">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Contents">
+      <UniqueIdentifier>{897afae5-5c78-4d2e-9edd-309f1a67f990}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ServerControl">
+      <UniqueIdentifier>{a82b89e3-60cd-46d3-9ea8-fe05ba84f990}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Echo">
+      <UniqueIdentifier>{536b0fcf-32dc-4247-b9eb-694f82988bdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\MonitoringServer">
+      <UniqueIdentifier>{16c690e3-d459-4f9d-9e50-50e01ce9024a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Object">
+      <UniqueIdentifier>{594fa9c5-c8c4-41d8-9276-ad6f57914d8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Object\Player">
+      <UniqueIdentifier>{8b824b6d-89d0-4100-854f-3254682f5097}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MMOServer">
+      <UniqueIdentifier>{614a63ce-cfed-42f8-a23d-57990acf86f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol">
+      <UniqueIdentifier>{bf6a8678-bcab-4752-8163-07c826d85e95}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MMOServer.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>PCH</Filter>
+    </ClCompile>
+    <ClCompile Include="CMMOServer.cpp">
+      <Filter>MMOServer</Filter>
+    </ClCompile>
+    <ClCompile Include="CEcho.cpp">
+      <Filter>Contents\Echo</Filter>
+    </ClCompile>
+    <ClCompile Include="CLanMonitoringClient.cpp">
+      <Filter>Contents\MonitoringServer</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlayer.cpp">
+      <Filter>Contents\Object\Player</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>PCH</Filter>
+    </ClInclude>
+    <ClInclude Include="CMMOServer.h">
+      <Filter>MMOServer</Filter>
+    </ClInclude>
+    <ClInclude Include="CServerControl.h">
+      <Filter>ServerControl</Filter>
+    </ClInclude>
+    <ClInclude Include="CEcho.h">
+      <Filter>Contents\Echo</Filter>
+    </ClInclude>
+    <ClInclude Include="CLanMonitoringClient.h">
+      <Filter>Contents\MonitoringServer</Filter>
+    </ClInclude>
+    <ClInclude Include="Protocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Protocol\GodDamnBug\CommonProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlayer.h">
+      <Filter>Contents\Object\Player</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

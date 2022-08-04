@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="main">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="PDH">
+      <UniqueIdentifier>{66557734-7621-422c-adf8-3f4bfcf14dc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetClient">
+      <UniqueIdentifier>{3b103f9c-5736-4d62-89f9-70254d044907}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NetClient.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>PDH</Filter>
+    </ClCompile>
+    <ClCompile Include="CNetClient.cpp">
+      <Filter>NetClient</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>PDH</Filter>
+    </ClInclude>
+    <ClInclude Include="CNetClient.h">
+      <Filter>NetClient</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

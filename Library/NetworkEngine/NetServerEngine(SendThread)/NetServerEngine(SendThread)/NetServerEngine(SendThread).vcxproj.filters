@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="PCH">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Contents">
+      <UniqueIdentifier>{7358dec8-339f-4355-8534-4dcd37d836e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerControl">
+      <UniqueIdentifier>{a34ec177-d45c-4e62-8f9e-bd50d1eb9153}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetServer">
+      <UniqueIdentifier>{0f9e8ad4-ee18-4120-89c4-92e78bb5c343}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NetServerEngine(SendThread).cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>PCH</Filter>
+    </ClCompile>
+    <ClCompile Include="CEcho.cpp">
+      <Filter>Contents</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerControl.cpp">
+      <Filter>ServerControl</Filter>
+    </ClCompile>
+    <ClCompile Include="CNetServer.cpp">
+      <Filter>NetServer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>PCH</Filter>
+    </ClInclude>
+    <ClInclude Include="CEcho.h">
+      <Filter>Contents</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerControl.h">
+      <Filter>ServerControl</Filter>
+    </ClInclude>
+    <ClInclude Include="CNetServer.h">
+      <Filter>NetServer</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

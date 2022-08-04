@@ -1,0 +1,8 @@
+[LanMonitoringServer] [2021-03-26 15:33:21] [ERROR] [00000001] : [saveGameServerProfile] Error Code : 1406, Error Message
+
+[LanMonitoringServer] [2021-03-26 16:00:40] [ERROR] [00000001] : [saveGameServerProfile] Error Code : 1062, Error Message
+
+[LanMonitoringServer] [2021-03-26 19:27:25] [ERROR] [00000001] : [DBWriteThread] Error Code : 1045, Error Message : Access denied for user 'chanhun'@'localhost' (using password: YES)
+
+[LanMonitoringServer] [2021-03-26 19:28:44] [ERROR] [00000001] : [saveGameServerProfile] Error Code : 1054, Error Message
+

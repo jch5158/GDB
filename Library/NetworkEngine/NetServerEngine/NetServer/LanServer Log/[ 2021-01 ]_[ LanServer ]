@@ -1,0 +1,348 @@
+[LanServer] [2021-01-13 21:08:25] [ERROR] [00000001] : [UpdateAcceptThread] CurrentClient is full, Max Client : 80, Current Client : 80
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000002] : [UpdateAcceptThread] Accept, Error Code : 10004
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000003] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000004] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000005] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000006] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000007] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000008] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000009] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000010] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000011] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000012] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000013] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000014] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000015] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000016] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000017] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000018] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000019] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000020] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000021] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000022] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000023] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000024] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000025] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000026] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000027] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000028] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000029] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000030] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000031] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000032] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000033] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000034] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000035] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000036] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000037] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000038] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000039] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000040] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000041] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000042] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000043] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000044] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000045] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000046] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000047] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000048] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000049] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000050] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000051] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000052] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000053] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000054] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000055] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000056] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000057] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000058] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000059] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000060] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000061] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000062] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000063] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000064] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000065] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000066] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000067] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000068] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000069] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000070] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000071] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000072] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000073] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:37] [ERROR] [00000074] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:08:47] [ERROR] [00000077] : [UpdateWorkerThread] pOverlapped is nullptr, Error Code : 0
+
+
+[LanServer] [2021-01-13 21:08:47] [ERROR] [00000077] : [UpdateWorkerThread] pOverlapped is nullptr, Error Code : 0
+
+
+[LanServer] [2021-01-13 21:08:47] [ERROR] [00000077] : [UpdateWorkerThread] pOverlapped is nullptr, Error Code : 0
+
+
+[LanServer] [2021-01-13 21:09:32] [ERROR] [00000002] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:32] [ERROR] [00000002] : [UpdateAcceptThread] Accept, Error Code : 10004
+
+[LanServer] [2021-01-13 21:09:32] [ERROR] [00000003] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:32] [ERROR] [00000004] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:32] [ERROR] [00000005] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:32] [ERROR] [00000006] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:32] [ERROR] [00000007] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:32] [ERROR] [00000008] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:32] [ERROR] [00000009] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:32] [ERROR] [00000010] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:32] [ERROR] [00000011] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:32] [ERROR] [00000012] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:32] [ERROR] [00000013] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:32] [ERROR] [00000014] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:32] [ERROR] [00000015] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:32] [ERROR] [00000016] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:32] [ERROR] [00000017] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:32] [ERROR] [00000018] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:32] [ERROR] [00000019] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:32] [ERROR] [00000020] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:32] [ERROR] [00000021] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:32] [ERROR] [00000022] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:32] [ERROR] [00000023] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:32] [ERROR] [00000024] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:32] [ERROR] [00000025] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:32] [ERROR] [00000026] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:32] [ERROR] [00000027] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:32] [ERROR] [00000028] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:32] [ERROR] [00000029] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:32] [ERROR] [00000030] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:32] [ERROR] [00000031] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:32] [ERROR] [00000032] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000033] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000034] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000035] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000036] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000037] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000038] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000039] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000040] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000041] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000042] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000043] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000044] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000045] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000046] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000047] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000048] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000049] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000050] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000051] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000052] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000053] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000054] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000055] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000056] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000057] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000058] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000059] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000060] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000061] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000062] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000063] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000064] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000065] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000066] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000067] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000068] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000069] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000070] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000071] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000072] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000073] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000074] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000075] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000076] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000077] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000078] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000079] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000080] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000081] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000082] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000083] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000084] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000085] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000086] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000087] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000088] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000089] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000090] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000091] : [Disconnect] Client Not Found, sessionID : 0
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000092] : [UpdateWorkerThread] pOverlapped is nullptr, Error Code : 0
+
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000093] : [UpdateWorkerThread] pOverlapped is nullptr, Error Code : 0
+
+
+[LanServer] [2021-01-13 21:09:33] [ERROR] [00000094] : [UpdateWorkerThread] pOverlapped is nullptr, Error Code : 0
+
+

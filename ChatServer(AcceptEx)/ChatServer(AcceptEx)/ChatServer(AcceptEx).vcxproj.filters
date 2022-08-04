@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="PCH">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Library">
+      <UniqueIdentifier>{445449e8-fcd8-4800-a617-e3fcdc208cb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{25483c5c-90d5-4d8b-90c3-b25c0a6ccf59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Player">
+      <UniqueIdentifier>{3494498f-8567-4105-8e77-4ad42c0e6014}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Job">
+      <UniqueIdentifier>{18bb216a-7f82-441c-ab71-57180cedbfce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents">
+      <UniqueIdentifier>{49613f9b-a11d-42a2-9238-37ad20bae8c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerController">
+      <UniqueIdentifier>{92e80c69-7af9-4d1b-ac92-9beacb778c3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetServer">
+      <UniqueIdentifier>{9eb9bb7b-0928-4533-8cac-e70b1812c37d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol">
+      <UniqueIdentifier>{9ef69737-2596-4514-aa31-b43a248c82d6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ChatServer(AcceptEx).cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>PCH</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\NetworkEngine\NetServerEngine(AcceptEx)\NetServerEngine(AcceptEx)\CNetServer.cpp">
+      <Filter>NetServer</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlayer.cpp">
+      <Filter>Object\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="CChatServer.cpp">
+      <Filter>Contents</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>PCH</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\NetworkEngine\NetServerEngine(AcceptEx)\NetServerEngine(AcceptEx)\CNetServer.h">
+      <Filter>NetServer</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlayer.h">
+      <Filter>Object\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="CJob.h">
+      <Filter>Object\Job</Filter>
+    </ClInclude>
+    <ClInclude Include="CChatServer.h">
+      <Filter>Contents</Filter>
+    </ClInclude>
+    <ClInclude Include="CServerController.h">
+      <Filter>ServerController</Filter>
+    </ClInclude>
+    <ClInclude Include="Protocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

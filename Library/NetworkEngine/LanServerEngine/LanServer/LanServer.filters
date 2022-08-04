@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\PCH">
+      <UniqueIdentifier>{b39f2b6b-8eea-473f-b812-99276915d159}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Library">
+      <UniqueIdentifier>{fbe82dec-dfe1-42de-b418-6ff9373fe444}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Library\Log">
+      <UniqueIdentifier>{f7b6b131-5941-4089-b412-c6404d311c7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Library\Network">
+      <UniqueIdentifier>{a35d81d3-4ae1-42d1-a6ca-13458c3c78cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Library\Dump">
+      <UniqueIdentifier>{cdce9c28-2b8e-4f71-a509-ba9416210b83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\main">
+      <UniqueIdentifier>{f34f01fb-b91b-446c-a498-b819fd187076}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Library\ServerControl">
+      <UniqueIdentifier>{70d04fea-41d8-4c52-aac8-0a2fc05de73c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Contents">
+      <UniqueIdentifier>{3d42342a-acd8-4f9e-b2eb-35884576731e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Library\Network\NetworkEngine">
+      <UniqueIdentifier>{3d312b5f-06e1-4834-bff7-59a40147a4f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Library\FreeList">
+      <UniqueIdentifier>{2d1d7037-b383-40b2-96f8-e728fc579c70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Library\Network\CMessage">
+      <UniqueIdentifier>{5931e18b-d79a-42a0-b774-b560356a0e12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Library\Network\CRingBuffer">
+      <UniqueIdentifier>{6dc0f3b2-0e21-4f3c-bd52-0b89f3b2f613}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Library\LockFreeStack">
+      <UniqueIdentifier>{a0c490bc-ef43-41ca-85d3-c746bcdfbade}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Library\LockFreeQueue">
+      <UniqueIdentifier>{3882fe62-5390-4865-8cc6-049acef81bf9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일\PCH</Filter>
+    </ClCompile>
+    <ClCompile Include="CLanServer.cpp">
+      <Filter>소스 파일\Library\Network\NetworkEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="CContents.cpp">
+      <Filter>소스 파일\Contents</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\CCrashDump.cpp">
+      <Filter>소스 파일\Library\Dump</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Log.cpp">
+      <Filter>소스 파일\Library\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\ServerControl.cpp">
+      <Filter>소스 파일\Library\ServerControl</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\CMessage.cpp">
+      <Filter>소스 파일\Library\Network\CMessage</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\CRingBuffer.cpp">
+      <Filter>소스 파일\Library\Network\CRingBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\CLockFreeStack.cpp">
+      <Filter>소스 파일\Library\LockFreeStack</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\CLockFreeObjectFreeList.cpp">
+      <Filter>소스 파일\Library\FreeList</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\CLockFreeQueue.cpp">
+      <Filter>소스 파일\Library\LockFreeQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\CTlsObjectFreeList.cpp">
+      <Filter>소스 파일\Library\FreeList</Filter>
+    </ClCompile>
+    <ClCompile Include="LanServer.cpp">
+      <Filter>소스 파일\main</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>소스 파일\PCH</Filter>
+    </ClInclude>
+    <ClInclude Include="CLanServer.h">
+      <Filter>소스 파일\Library\Network\NetworkEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="CContents.h">
+      <Filter>소스 파일\Contents</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\CCrashDump.h">
+      <Filter>소스 파일\Library\Dump</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Log.h">
+      <Filter>소스 파일\Library\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\ServerControl.h">
+      <Filter>소스 파일\Library\ServerControl</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\CMessage.h">
+      <Filter>소스 파일\Library\Network\CMessage</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\CRingBuffer.h">
+      <Filter>소스 파일\Library\Network\CRingBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\CLockFreeStack.h">
+      <Filter>소스 파일\Library\LockFreeStack</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\CLockFreeObjectFreeList.h">
+      <Filter>소스 파일\Library\FreeList</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\CLockFreeQueue.h">
+      <Filter>소스 파일\Library\LockFreeQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\CTlsObjectFreeList.h">
+      <Filter>소스 파일\Library\FreeList</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="LanServer.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="main">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="PCH">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="ServerControl">
+      <UniqueIdentifier>{d920297b-6d86-4aac-8521-7bc900072b46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents">
+      <UniqueIdentifier>{f1c30959-7b2d-47bf-8525-1eda9d01b0f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\ChattingServer">
+      <UniqueIdentifier>{bbe835fd-034d-48b3-89a9-759839f359c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\LanMonitoringClient">
+      <UniqueIdentifier>{cc30c96b-49f8-4551-8934-f2fb8adde60d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Object">
+      <UniqueIdentifier>{02e4b307-778e-4f01-931f-8aad15c33447}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Object\Job">
+      <UniqueIdentifier>{22e39d55-305e-4ece-8267-dd207b76ef0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Object\Player">
+      <UniqueIdentifier>{8962d50a-d1fd-457e-942c-461f1456c35b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\LanLoginServerClient">
+      <UniqueIdentifier>{48040d09-abab-4f74-afd3-321fe229dd25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol">
+      <UniqueIdentifier>{6238f2bf-94c8-4025-8d82-f533ebefcec8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetServer">
+      <UniqueIdentifier>{11597982-8bf7-45cd-b079-574075511130}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ChattingServer(RedisLogin).cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>PCH</Filter>
+    </ClCompile>
+    <ClCompile Include="CChattingServer.cpp">
+      <Filter>Contents\ChattingServer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\NetworkEngine\NetServerEngine\NetServer\CNetServer.cpp">
+      <Filter>NetServer</Filter>
+    </ClCompile>
+    <ClCompile Include="CLanMonitoringClient.cpp">
+      <Filter>Contents\LanMonitoringClient</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlayer.cpp">
+      <Filter>Contents\Object\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="CLanLoginClient.cpp">
+      <Filter>Contents\LanLoginServerClient</Filter>
+    </ClCompile>
+    <ClCompile Include="CJob.cpp">
+      <Filter>Contents\Object\Job</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>PCH</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerController.h">
+      <Filter>ServerControl</Filter>
+    </ClInclude>
+    <ClInclude Include="CChattingServer.h">
+      <Filter>Contents\ChattingServer</Filter>
+    </ClInclude>
+    <ClInclude Include="CJob.h">
+      <Filter>Contents\Object\Job</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\NetworkEngine\NetServerEngine\NetServer\CNetServer.h">
+      <Filter>NetServer</Filter>
+    </ClInclude>
+    <ClInclude Include="CLanMonitoringClient.h">
+      <Filter>Contents\LanMonitoringClient</Filter>
+    </ClInclude>
+    <ClInclude Include="Protocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlayer.h">
+      <Filter>Contents\Object\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Protocol\GodDamnBug\CommonProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="CLanLoginClient.h">
+      <Filter>Contents\LanLoginServerClient</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>PCH</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
