@@ -12,9 +12,6 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Profiler">
-      <UniqueIdentifier>{88c4b8ef-e49a-4f26-bd1b-b4278874421f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="LockFreeStack">
       <UniqueIdentifier>{a306e770-6607-44e0-8b77-cc21ae19e037}</UniqueIdentifier>
     </Filter>
@@ -29,9 +26,6 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>PCH</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\PerformanceProfiler\PerformanceProfiler\CPerformanceProfiler.cpp">
-      <Filter>Profiler</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -42,9 +36,6 @@
     </ClInclude>
     <ClInclude Include="CTest.h">
       <Filter>Object</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\PerformanceProfiler\PerformanceProfiler\CPerformanceProfiler.h">
-      <Filter>Profiler</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

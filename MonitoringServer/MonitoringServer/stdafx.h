@@ -12,25 +12,24 @@
 #include <unordered_map>
 #include <list>
 
-#include "DumpLibrary/DumpLibrary/CCrashDump.h"
-#include "SystemLogLibrary/SystemLogLibrary/CSystemLog.h"
-#include "ParserLibrary/ParserLibrary/CParser.h"
+#include "CrashDump/CrashDump/CCrashDump.h"
+#include "SystemLog/SystemLog/CSystemLog.h"
+#include "Parser/Parser/CParser.h"
 #include "CPUProfiler/CPUProfiler/CCPUProfiler.h"
-#include "HardwareProfilerLibrary/HardwareProfilerLibrary/CHardwareProfiler.h"
+#include "HardwareProfiler/HardwareProfiler/CHardwareProfiler.h"
 
-#include "DBConnectorLibrary/DBConnectorLibrary/CDBConnector.h"
-#include "MessageLibrary/MessageLibrary/CMessage.h"
-#include "RingBufferLibrary/RingBufferLib/CRingBuffer.h"
-#include "RingBufferLibrary/RingBufferLib/CTemplateRingBuffer.h"
-#include "LockFreeObjectFreeList/ObjectFreeListLib/CLockFreeObjectFreeList.h"
-#include "LockFreeObjectFreeList/ObjectFreeListLib/CTLSLockFreeObjectFreeList.h"
-#include "LockFreeStack/LockFreeStackLib/CLockFreeStack.h"
-#include "LockFreeQueue/LockFreeQueueLib/CLockFreeQueue.h"
+#include "DBConnector/DBConnector/CTLSDBConnector.h"
+#include "Message/Message/CMessage.h"
+#include "RingBuffer/RingBuffer/CRingBuffer.h"
+#include "RingBuffer/RingBuffer/CTemplateQueue.h"
+#include "LockFreeObjectFreeList/ObjectFreeList/CTLSLockFreeObjectFreeList.h"
+#include "LockFreeStack/LockFreeStack/CLockFreeStack.h"
+#include "LockFreeQueue/LockFreeQueue/CLockFreeQueue.h"
 #include "NetworkEngine/NetServerEngine/NetServer/CNetServer.h"
 #include "NetworkEngine/LanServerEngine/LanServer/CLanServer.h"
 
 #include "CommonProtocol.h"
-#include "ProfileDataType.h"
+#include "ProfileDataType/GodDamnBug/ProfileDataType.h"
 
 #include "CNetMonitoringServer.h"
 #include "CLanMonitoringServer.h"

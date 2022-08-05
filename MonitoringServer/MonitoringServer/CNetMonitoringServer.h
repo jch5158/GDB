@@ -9,7 +9,7 @@ public:
 
 	~CNetMonitoringServer(void);
 
-	virtual BOOL OnStart(void) final;
+	virtual bool OnStart(void) final;
 
 	virtual void OnClientJoin(UINT64 sessionID) final;
 
@@ -24,11 +24,11 @@ public:
 	virtual void OnCloseWorkerThread(void) final;
 
 	// accept 직후 바로 호출
-	virtual BOOL OnConnectionRequest(const WCHAR* userIP, WORD userPort) final;
+	virtual bool OnConnectionRequest(const wchar_t* userIP, unsigned short userPort) final;
 
 	virtual void OnCloseAcceptThread(void) final;
 
-	virtual void OnError(DWORD errorCode, const WCHAR* errorMessage) final;
+	virtual void OnError(unsigned int errorCode, const wchar_t* errorMessage) final;
 
 	virtual void OnStop(void) final;
 

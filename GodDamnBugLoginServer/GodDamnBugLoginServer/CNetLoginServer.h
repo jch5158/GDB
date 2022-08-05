@@ -21,7 +21,7 @@ public:
 
 	~CNetLoginServer(void);
 
-	virtual BOOL OnStart(void) final;
+	virtual bool OnStart(void) final;
 
 	virtual void OnClientJoin(UINT64 sessionID) final;
 
@@ -38,9 +38,9 @@ public:
 	virtual void OnCloseWorkerThread(void) final;
 
 	// accept 직후 바로 호출
-	virtual BOOL OnConnectionRequest(const WCHAR* pUserIP, WORD userPort) final;
+	virtual bool OnConnectionRequest(const WCHAR* pUserIP, WORD userPort) final;
 
-	virtual void OnError(DWORD errorCode, const WCHAR* errorMessage) final;
+	virtual void OnError(unsigned int errorCode, const wchar_t* errorMessage) final;
 
 	virtual void OnStop(void) final;
 
@@ -129,7 +129,7 @@ public:
 		{
 		}
 
-		inline static CTLSLockFreeObjectFreeList<CConnectionState> mFreeList = { 0,FALSE };
+		inline static CTLSLockFreeObjectFreeList<CConnectionState> mFreeList;
 
 	public:
 

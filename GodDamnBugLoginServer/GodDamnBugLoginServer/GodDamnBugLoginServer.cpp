@@ -483,7 +483,7 @@ BOOL NetLoginServerOn(CNetServer** pLoginServer, WCHAR* pServerIP, WCHAR* pGameS
 
 	((CNetLoginServer*)*pLoginServer)->SetWhiteModeFlag(bWhiteIPModeFlag);
 
-	if ((*pLoginServer)->Start(pServerIP, serverPort, maxMessageSize, bNagleFlag, headerCode, staticKey, runningThreadCount, workerThreadCount, maxClientCount) == FALSE)
+	if ((*pLoginServer)->Start(pServerIP, serverPort, maxMessageSize, bNagleFlag, true, headerCode, staticKey, 60, runningThreadCount, workerThreadCount, maxClientCount) == FALSE)
 	{
 		CSystemLog::GetInstance()->Log(TRUE, CSystemLog::eLogLevel::LogLevelError, L"LoginServer", L"[LoginServerOn] Start Failed");
 

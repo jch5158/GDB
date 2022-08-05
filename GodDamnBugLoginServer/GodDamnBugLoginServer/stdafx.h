@@ -2,8 +2,6 @@
 
 
 #include <WS2tcpip.h>
-
-#include "RedisLibrary/RedisLibrary/CTLSRedisConnector.h"
 #include <iostream>
 #include <Windows.h>
 #include <process.h>
@@ -12,25 +10,24 @@
 
 #include "CommonProtocol.h"
 
-#include "DumpLibrary/DumpLibrary/CCrashDump.h"
-#include "SystemLogLibrary/SystemLogLibrary/CSystemLog.h"
-#include "ParserLibrary/ParserLibrary/CParser.h"
+#include "CrashDump/CrashDump/CCrashDump.h"
 #include "CPUProfiler/CPUProfiler/CCPUProfiler.h"
+#include "SystemLog/SystemLog/CSystemLog.h"
+#include "Parser/Parser/CParser.h"
+#include "RedisConnector/RedisConnector/CTLSRedisConnector.h"
 #include "PerformanceProfiler/PerformanceProfiler/CTLSPerformanceProfiler.h"
-#include "HardwareProfilerLibrary/HardwareProfilerLibrary/CHardwareProfiler.h"
-#include "CriticalSectionLibrary/CriticalSectionLibrary/CCriticalSection.h"
-#include "SRWLockLibrary/SRWLockLibrary/CSRWLockExclusive.h"
-#include "SRWLockLibrary/SRWLockLibrary/CSRWLockShared.h"
-#include "MessageLibrary/MessageLibrary/CMessage.h"
-#include "RingBufferLibrary/RingBufferLib/CRingBuffer.h"
-#include "RingBufferLibrary/RingBufferLib/CTemplateRingBuffer.h"
-#include "LockFreeStack/LockFreeStackLib/CLockFreeStack.h"
-#include "LockFreeQueue/LockFreeQueueLib/CLockFreeQueue.h"
-#include "LockFreeObjectFreeList/ObjectFreeListLib/CLockFreeObjectFreeList.h"
-#include "LockFreeObjectFreeList/ObjectFreeListLib/CTLSLockFreeObjectFreeList.h"
+#include "HardwareProfiler/HardwareProfiler/CHardwareProfiler.h"
+#include "CriticalSection/CriticalSection/CCriticalSection.h"
+#include "SRWLock/SRWLock/CSRWLockExclusive.h"
+#include "SRWLock/SRWLock/CSRWLockShared.h"
+#include "Message/Message/CMessage.h"
+#include "RingBuffer/RingBuffer/CRingBuffer.h"
+#include "RingBuffer/RingBuffer/CTemplateQueue.h"
+#include "LockFreeStack/LockFreeStack/CLockFreeStack.h"
+#include "LockFreeQueue/LockFreeQueue/CLockFreeQueue.h"
+#include "LockFreeObjectFreeList/ObjectFreeList/CTLSLockFreeObjectFreeList.h"
 
-#include "DBConnectorLibrary/DBConnectorLibrary/CDBConnector.h"
-#include "DBConnectorLibrary/DBConnectorLibrary/CTLSDBConnector.h"
+#include "DBConnector/DBConnector/CTLSDBConnector.h"
 #include "NetworkEngine/NetServerEngine/NetServer/CNetServer.h"
 #include "NetworkEngine/LanServerEngine/LanServer/CLanServer.h"
 #include "NetworkEngine/LanClientEngine/LanClientEngine/CLanClient.h"

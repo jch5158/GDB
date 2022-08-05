@@ -340,7 +340,7 @@ void CLanMonitoringClient::sendLoginServerPacketPool(void)
 {
 	CMessage* pMessage = CMessage::Alloc();
 
-	packingMonitoringData(en_PACKET_SS_MONITOR_DATA_UPDATE, dfMONITOR_DATA_TYPE_LOGIN_PACKET_POOL, CLockFreeObjectFreeList<CTLSLockFreeObjectFreeList<CMessage>::CChunk>::GetAllocNodeCount(), time(NULL), pMessage);
+	packingMonitoringData(en_PACKET_SS_MONITOR_DATA_UPDATE, dfMONITOR_DATA_TYPE_LOGIN_PACKET_POOL, CMessage::GetAllocCount(), time(NULL), pMessage);
 
 	SendPacket(mSessionID, pMessage);
 

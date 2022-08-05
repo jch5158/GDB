@@ -103,7 +103,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)/x64/Release</AdditionalLibraryDirectories>
-      <AdditionalDependencies>CPUProfiler.lib;CrashDump.lib;HardwareProfiler.lib;LanClientEngine.lib;LockFreeFreeList.lib;LockFreeQueue.lib;LockFreeStack.lib;Message.lib;ObjectFreeList.lib;Parser.lib;PerformanceProfiler.lib;RingBuffer.lib;SystemLog.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>CPUProfiler.lib;CrashDump.lib;HardwareProfiler.lib;LanClientEngine.lib;LockFreeFreeList.lib;LockFreeQueue.lib;LockFreeStack.lib;Message.lib;ObjectFreeList.lib;Parser.lib;PerformanceProfiler.lib;RingBuffer.lib;SystemLog.lib;MMOServer.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -128,7 +128,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)/x64/Release</AdditionalLibraryDirectories>
-      <AdditionalDependencies>CPUProfiler.lib;CrashDump.lib;HardwareProfiler.lib;LanClientEngine.lib;LockFreeFreeList.lib;LockFreeQueue.lib;LockFreeStack.lib;Message.lib;ObjectFreeList.lib;Parser.lib;PerformanceProfiler.lib;RingBuffer.lib;SystemLog.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>CPUProfiler.lib;CrashDump.lib;HardwareProfiler.lib;LanClientEngine.lib;LockFreeFreeList.lib;LockFreeQueue.lib;LockFreeStack.lib;Message.lib;ObjectFreeList.lib;Parser.lib;PerformanceProfiler.lib;RingBuffer.lib;SystemLog.lib;MMOServer.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -148,7 +148,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)/x64/Release</AdditionalLibraryDirectories>
-      <AdditionalDependencies>CPUProfiler.lib;CrashDump.lib;HardwareProfiler.lib;LanClientEngine.lib;LockFreeFreeList.lib;LockFreeQueue.lib;LockFreeStack.lib;Message.lib;ObjectFreeList.lib;Parser.lib;PerformanceProfiler.lib;RingBuffer.lib;SystemLog.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>CPUProfiler.lib;CrashDump.lib;HardwareProfiler.lib;LanClientEngine.lib;LockFreeFreeList.lib;LockFreeQueue.lib;LockFreeStack.lib;Message.lib;ObjectFreeList.lib;Parser.lib;PerformanceProfiler.lib;RingBuffer.lib;SystemLog.lib;MMOServer.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -173,7 +173,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)/x64/Release</AdditionalLibraryDirectories>
-      <AdditionalDependencies>CPUProfiler.lib;CrashDump.lib;HardwareProfiler.lib;LanClientEngine.lib;LockFreeFreeList.lib;LockFreeQueue.lib;LockFreeStack.lib;Message.lib;ObjectFreeList.lib;Parser.lib;PerformanceProfiler.lib;RingBuffer.lib;SystemLog.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>CPUProfiler.lib;CrashDump.lib;HardwareProfiler.lib;LanClientEngine.lib;LockFreeFreeList.lib;LockFreeQueue.lib;LockFreeStack.lib;Message.lib;ObjectFreeList.lib;Parser.lib;PerformanceProfiler.lib;RingBuffer.lib;SystemLog.lib;MMOServer.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

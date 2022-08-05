@@ -30,13 +30,13 @@ CNetLoginServer::~CNetLoginServer(void)
 {	
 }
 
-BOOL CNetLoginServer::OnStart(void)
+bool CNetLoginServer::OnStart(void)
 {
 	mConnectionStateMap.reserve(GetMaxClientCount());
 
 	setupDisconnectThread();
 
-	return TRUE;
+	return true;
 }
 
 void CNetLoginServer::OnClientJoin(UINT64 sessionID)
@@ -111,9 +111,9 @@ void CNetLoginServer::OnCloseWorkerThread(void)
 }
 
 
-BOOL CNetLoginServer::OnConnectionRequest(const WCHAR* pUserIP, WORD userPort)
+bool CNetLoginServer::OnConnectionRequest(const WCHAR* pUserIP, WORD userPort)
 {
-	BOOL retval = TRUE;
+	bool retval = TRUE;
 
 	if (mbWhiteModeFlag == TRUE)
 	{
@@ -141,7 +141,7 @@ BOOL CNetLoginServer::OnConnectionRequest(const WCHAR* pUserIP, WORD userPort)
 }
 
 
-void CNetLoginServer::OnError(DWORD errorCode, const WCHAR* errorMessage)
+void CNetLoginServer::OnError(unsigned int errorCode, const wchar_t* errorMessage)
 {
 
 
@@ -456,7 +456,7 @@ BOOL CNetLoginServer::recvProcedureLoginRequest(UINT64 sessionID, CMessage* pMes
 
 	GetClientIP(sessionID, clientIP, _countof(clientIP));
 
-	GetClientPort(sessionID, &clientPort);
+	GetClientPort(sessionID, (WORD*)&clientPort);
 	
 	setAccountStatus(accountNo, status, clientIP, clientPort);	
 

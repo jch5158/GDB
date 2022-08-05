@@ -292,7 +292,7 @@ BOOL NetServerOn(CNetServer** pNetServer, WCHAR* pNetServerIP, INT netServerPort
 	((CNetMonitoringServer*)*pNetServer)->SetLoginKey(pLoginKey);
 
 	if ((*pNetServer)->Start(
-		pNetServerIP, netServerPort, netMaxMessageSize, bNetNagleFlag, headerCode, staticKey, netRunningThreadCound, netWorkerThreadCount, netMaxClientCount
+		pNetServerIP, netServerPort, netMaxMessageSize, bNetNagleFlag, true, headerCode, staticKey, 60, netRunningThreadCound, netWorkerThreadCount, netMaxClientCount
 	) == FALSE)
 	{
 		CSystemLog::GetInstance()->Log(TRUE, CSystemLog::eLogLevel::LogLevelError, L"MonitoringServer", L"[NetServerOn] Net Server Start is Failed");

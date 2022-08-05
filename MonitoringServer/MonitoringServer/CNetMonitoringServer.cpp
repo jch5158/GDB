@@ -15,10 +15,9 @@ CNetMonitoringServer::~CNetMonitoringServer(void)
 	DeleteCriticalSection(&mClientsCriticalSection);
 }
 
-BOOL CNetMonitoringServer::OnStart(void)
+bool CNetMonitoringServer::OnStart(void)
 {
-
-	return TRUE;
+	return true;
 }
 
 void CNetMonitoringServer::OnClientJoin(UINT64 sessionID)
@@ -67,7 +66,7 @@ void CNetMonitoringServer::OnCloseWorkerThread(void)
 }
 
 // accept 직후 바로 호출
-BOOL CNetMonitoringServer::OnConnectionRequest(const WCHAR* userIP, WORD userPort)
+bool CNetMonitoringServer::OnConnectionRequest(const wchar_t* userIP, unsigned short userPort)
 {
 	return TRUE;
 }
@@ -78,7 +77,7 @@ void CNetMonitoringServer::OnCloseAcceptThread(void)
 	return;
 }
 
-void CNetMonitoringServer::OnError(DWORD errorCode, const WCHAR* errorMessage)
+void CNetMonitoringServer::OnError(unsigned int errorCode, const wchar_t* errorMessage)
 {
 	return;
 }

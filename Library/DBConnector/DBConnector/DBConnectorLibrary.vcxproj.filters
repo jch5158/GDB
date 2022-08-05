@@ -9,9 +9,6 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="SystemLog">
-      <UniqueIdentifier>{80081c94-2f80-409f-b039-dba35b65833e}</UniqueIdentifier>
-    </Filter>
     <Filter Include="DBConnector">
       <UniqueIdentifier>{230f8c0d-d842-4a12-bba8-ada733c6e946}</UniqueIdentifier>
     </Filter>
@@ -36,9 +33,6 @@
     </ClInclude>
     <ClInclude Include="CTLSDBConnector.h">
       <Filter>TLSDBConnector</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\SystemLogLibrary\SystemLogLibrary\CSystemLog.h">
-      <Filter>SystemLog</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

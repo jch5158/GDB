@@ -91,7 +91,7 @@ public:
 			mpLanMonitoringServer->GetServerBindIP(), mpLanMonitoringServer->GetServerBindPort(), mpLanMonitoringServer->GetAcceptTotal(),
 			mpLanMonitoringServer->GetGameServerLoginFlag(), mpLanMonitoringServer->GetChatServerLoginFlag(), mpLanMonitoringServer->GetLoginServerLoginFlag(),
 			mbControlModeFlag, CSystemLog::GetInstance()->GetLogLevel(),
-			CLockFreeObjectFreeList<CTLSLockFreeObjectFreeList<CMessage>::CChunk>::GetAllocNodeCount()
+			CMessage::GetAllocCount()
 		);
 
 		return;

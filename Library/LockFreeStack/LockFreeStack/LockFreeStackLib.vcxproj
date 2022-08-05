@@ -166,7 +166,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\PerformanceProfiler\PerformanceProfiler\CPerformanceProfiler.cpp" />
     <ClCompile Include="CTest.cpp" />
     <ClCompile Include="LockFreeStack.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -177,7 +176,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\PerformanceProfiler\PerformanceProfiler\CPerformanceProfiler.h" />
     <ClInclude Include="CLockFreeStack.h" />
     <ClInclude Include="CTest.h" />
     <ClInclude Include="stdafx.h" />
