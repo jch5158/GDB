@@ -127,16 +127,16 @@ public:
 			{
 				if ((long long)nullptr == InterlockedCompareExchange64((long long*)&tailTemp.pointerHighPart->mpNextNode, (long long)pNewNode, (long long)nullptr))
 				{
-					// 여기서 Tail의 변화를 감지. 분명 아직 옮기지도 않았는데 Tail의 변화를 감지
-
 					// 이 코드에서 밀지 못하는 건 어쩔 수 없음 다음 Enqueue, Dequeue 가 밀어줄 상황이다. 
 					InterlockedCompareExchange128((long long*)&mTail, (long long)pNewNode, tailTemp.countLowPart + 1, (long long*)&tailTemp);
 
 					break;
 				}
 			}
-			else
+			else 
+			{
 				InterlockedCompareExchange128((long long*)&mTail, (long long)tailTemp.pointerHighPart->mpNextNode, tailTemp.countLowPart + 1, (long long*)&tailTemp);
+			}
 		}
 
 		InterlockedIncrement(&mQueueUseSize);
@@ -147,9 +147,6 @@ public:
 	// 수정
 	bool Dequeue(DATA* data)
 	{
-		if (data == nullptr)
-			return false;
-
 		if (InterlockedDecrement(&mQueueUseSize) < 0)
 		{
 			InterlockedIncrement(&mQueueUseSize);

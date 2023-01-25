@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LockFreeStack", "LockFreeSt
 		{FC04C150-A65E-4854-B03C-28BF79D819CC} = {FC04C150-A65E-4854-B03C-28BF79D819CC}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PerformanceProfiler", "..\PerformanceProfiler\PerformanceProfiler\PerformanceProfiler.vcxproj", "{E1DCA798-C7E7-4D96-844A-C5CE3495C364}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -45,6 +47,14 @@ Global
 		{6C7B6905-28AA-4C4A-A022-07812F0A14DB}.Release|x64.Build.0 = Release|x64
 		{6C7B6905-28AA-4C4A-A022-07812F0A14DB}.Release|x86.ActiveCfg = Release|Win32
 		{6C7B6905-28AA-4C4A-A022-07812F0A14DB}.Release|x86.Build.0 = Release|Win32
+		{E1DCA798-C7E7-4D96-844A-C5CE3495C364}.Debug|x64.ActiveCfg = Debug|x64
+		{E1DCA798-C7E7-4D96-844A-C5CE3495C364}.Debug|x64.Build.0 = Debug|x64
+		{E1DCA798-C7E7-4D96-844A-C5CE3495C364}.Debug|x86.ActiveCfg = Debug|Win32
+		{E1DCA798-C7E7-4D96-844A-C5CE3495C364}.Debug|x86.Build.0 = Debug|Win32
+		{E1DCA798-C7E7-4D96-844A-C5CE3495C364}.Release|x64.ActiveCfg = Release|x64
+		{E1DCA798-C7E7-4D96-844A-C5CE3495C364}.Release|x64.Build.0 = Release|x64
+		{E1DCA798-C7E7-4D96-844A-C5CE3495C364}.Release|x86.ActiveCfg = Release|Win32
+		{E1DCA798-C7E7-4D96-844A-C5CE3495C364}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

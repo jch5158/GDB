@@ -70,9 +70,6 @@ int wmain()
 		wprintf(L"SetEvent Failed\n");
 	}
 	
-
-	WaitForMultipleObjects(10, gHandleArray, true, INFINITE);
-
-	
+	WaitForMultipleObjects(10, gHandleArray, true, INFINITE);	
 }
 

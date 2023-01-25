@@ -7,4 +7,4 @@
 #include <conio.h>
 
 #include "LockFreeObjectFreeList/ObjectFreeList/CTLSLockFreeObjectFreeList.h"
-#include "PerformanceProfiler/PerformanceProfiler/CPerformanceProfiler.h"
+#include "PerformanceProfiler/PerformanceProfiler/CTLSPerformanceProfiler.h"

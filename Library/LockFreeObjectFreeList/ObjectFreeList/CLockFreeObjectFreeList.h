@@ -33,19 +33,27 @@ public:
 
 	CLockFreeObjectFreeList()
 		:mTopNode {0,}
+		,mHeap(nullptr)
 		,mbPlacementNewFlag(false)
-		, mAllocNodeCount(0)
-	{}
+		,mAllocNodeCount(0)
+	{
+		mHeap = HeapCreate(0, 0, 0);
+	}
 
 	explicit CLockFreeObjectFreeList(int nodeCount, bool bPlacementNewFlag)
 		: mTopNode{ 0, }
+		, mHeap(nullptr)
 		, mbPlacementNewFlag(bPlacementNewFlag)
+		, mAllocNodeCount(0)
 	{
+		mHeap = HeapCreate(0, 0, 0);
+
 		// 초기 블럭 개수만큼 노드를 생성한다.
 		for (int count = 0; count < nodeCount; ++count)
 		{
 			// 노드의 동적할당.
-			stNode* blockPtr = (stNode*)malloc(sizeof(stNode));
+			// stNode* blockPtr = (stNode*)malloc(sizeof(stNode));
+			stNode* blockPtr = (stNode*)HeapAlloc(mHeap, 0, sizeof(stNode));
 			if (blockPtr == nullptr)
 			{
 				CSystemLog::GetInstance()->Log(TRUE, CSystemLog::eLogLevel::LogLevelError, L"LockFreeObjectFreeList", L"[CLockFreeObjectFreeList] Error Code : %d", GetLastError());
@@ -87,8 +95,11 @@ public:
 			// pTempNode에 다음 노드 값을 top 노드로 바꾼다.
 			mTopNode.highPointerPart = pTempNode->pNextNode;
 
-			free(pTempNode);
+			//free(pTempNode);
+			HeapFree(mHeap, 0, pTempNode);
 		}
+
+		HeapDestroy(mHeap);
 	}
 
 	CLockFreeObjectFreeList(const CLockFreeObjectFreeList&) = delete;
@@ -108,7 +119,8 @@ public:
 
 			if (tempInt128.highPointerPart == nullptr)
 			{
-				tempInt128.highPointerPart = (stNode*)malloc(sizeof(stNode));
+				// tempInt128.highPointerPart = (stNode*)malloc(sizeof(stNode));
+				tempInt128.highPointerPart = (stNode*)HeapAlloc(mHeap, 0, sizeof(stNode));
 				if (tempInt128.highPointerPart == nullptr)
 				{
 					CSystemLog::GetInstance()->Log(TRUE, CSystemLog::eLogLevel::LogLevelError, L"LockFreeObjectFreeList", L"[Alloc] malloc return nullptr Error Code : %d", GetLastError());
@@ -178,6 +190,8 @@ private:
 
 	// ~CFreeList() 소멸자에서 해당 리스트를 순회해서 Relese 
 	stInt128 mTopNode;
+
+	HANDLE mHeap;
 
 	// placement new를 호출할지 말지를 셋팅
 	bool mbPlacementNewFlag;

@@ -17,6 +17,10 @@ BOOL MonitoringClientOff(CLanClient* pMonitoringClient);
 
 INT wmain()
 {
+std::cout << "ASDF";
+
+return 1;
+
 	CHardwareProfiler::SetHardwareProfiler(FALSE, TRUE, FALSE, FALSE, FALSE, nullptr);
 
 	CTLSPerformanceProfiler::SetPerformanceProfiler(L"ChatServer", 10);

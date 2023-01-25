@@ -57,7 +57,6 @@ private:
 		stNode* pointerHighPart;
 	};
 
-
 public:
 
 	CLockFreeStack()
@@ -99,9 +98,6 @@ public:
 	// °³¼± POP
 	bool Pop(DATA* data)
 	{
-		if (data == nullptr)
-			return false;
-
 		if (InterlockedDecrement(&mCount) < 0)
 		{
 			InterlockedIncrement(&mCount);
@@ -131,7 +127,6 @@ public:
 	{
 		return mCount;
 	}
-
 
 private:
 

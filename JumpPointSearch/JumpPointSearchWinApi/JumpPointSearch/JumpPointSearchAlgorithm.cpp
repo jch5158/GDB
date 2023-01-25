@@ -5,7 +5,7 @@
 #include "stdafx.h"
 #include "resource.h"
 #include "framework.h"
-#include "CJumpPointSearch.h"
+#include "JumpPointSearch.h"
 #include "BresenhamLine.h"
 #include "JumpPointSearchAlgorithm.h"
 
@@ -63,7 +63,7 @@ bool               returnFlag = false;
 
 bool               pathFineFlag = true;
 
-CJumpPointSearch    jspObject(MAX_WIDTH, MAX_HEIGHT);
+JumpPointSearch    jspObject(MAX_WIDTH, MAX_HEIGHT);
 
 
 RouteNode          routeNodeArray[100];
@@ -624,19 +624,19 @@ void SaveMap(void)
     {
     case 0:
 
-        SaveToFile(L"..\\..\\Map\\Map_1");
+        SaveToFile(L"C:\\Users\\jch35\\OneDrive\\바탕 화면\\Project\\Library\\JumpPointSearchLibrary\\Map\\Map_1");
 
     break;
 
     case 1:
         
-        SaveToFile(L"..\\..\\Map\\Map_2");
+        SaveToFile(L"C:\\Users\\jch35\\OneDrive\\바탕 화면\\Project\\Library\\JumpPointSearchLibrary\\Map\\Map_2");
 
     break;
 
     case 2:
 
-        SaveToFile(L"..\\..\\Map\\Map_3");
+        SaveToFile(L"C:\\Users\\jch35\\OneDrive\\바탕 화면\\Project\\Library\\JumpPointSearchLibrary\\Map\\Map_3");
 
     break; 
     
@@ -700,19 +700,19 @@ void LoadMap(void)
     {
     case 0:
 
-        ReadMapFile(L"..\\..\\Map\\Map_1");
+        ReadMapFile(L"C:\\Users\\jch35\\OneDrive\\바탕 화면\\Project\\Library\\JumpPointSearchLibrary\\Map\\Map_1");
 
         break;
 
     case 1:
 
-        ReadMapFile(L"..\\..\\Map\\Map_2");
+        ReadMapFile(L"C:\\Users\\jch35\\OneDrive\\바탕 화면\\Project\\Library\\JumpPointSearchLibrary\\Map\\Map_2");
 
         break;
 
     case 2:
 
-        ReadMapFile(L"..\\..\\Map\\Map_3");
+        ReadMapFile(L"C:\\Users\\jch35\\OneDrive\\바탕 화면\\Project\\Library\\JumpPointSearchLibrary\\Map\\Map_3");
 
         break;
 
