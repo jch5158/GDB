@@ -1,27 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="소스 파일">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
     <Filter Include="PCH">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="Library">
-      <UniqueIdentifier>{293cf4f0-2784-4f3e-929a-f9860d7b096c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="LockFreeObjectFreeList">
-      <UniqueIdentifier>{75875324-0ec2-4735-8a91-4756733be2bf}</UniqueIdentifier>
-    </Filter>
     <Filter Include="LockFreeFreeList">
       <UniqueIdentifier>{fefdf1a7-fa00-4bc5-89d7-80758bd60444}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LockFreeFreeList.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>main</Filter>
     </ClCompile>
     <ClCompile Include="stdafx.cpp">
       <Filter>PCH</Filter>
@@ -31,17 +25,11 @@
     <ClInclude Include="stdafx.h">
       <Filter>PCH</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\LockFreeObjectFreeList\ObjectFreeListLib\CLockFreeObjectFreeList.h">
-      <Filter>LockFreeObjectFreeList</Filter>
-    </ClInclude>
     <ClInclude Include="CTLSLockFreeFreeList.h">
       <Filter>LockFreeFreeList</Filter>
     </ClInclude>
     <ClInclude Include="CLockFreeFreeListManager.h">
       <Filter>LockFreeFreeList</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\LockFreeObjectFreeList\ObjectFreeListLib\CTLSLockFreeObjectFreeList.h">
-      <Filter>LockFreeObjectFreeList</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

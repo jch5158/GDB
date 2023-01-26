@@ -1,80 +1,93 @@
 ﻿#include "stdafx.h"
+#include <process.h>
+
+constexpr int THREAD_COUNT = 6;
+constexpr int M_SIZE = 2000;
+CLockFreeFreeListManager gMemoryFreeList;
+HANDLE handles[THREAD_COUNT];
+HANDLE gEvent;
 
 
+unsigned WorkerThread1(void* p) {
 
-class A
-{
-public:
+	WaitForSingleObject(gEvent, INFINITE);
 
-	A()
-		:num1()
-		,num2()
-		,num3()
-	{}
+	void* memories[1000];
 
+	for (int i = 0; i < 10000; ++i) {
 
-	~A()
-	{}
+		{
+			CTLSPerformanceProfiler profiler(L"malloc");
 
-	void* operator new(size_t size)
-	{
-		return mFreeListManager.Alloc(size);
+			for (int z = 0; z < 1000; ++z) {
+				memories[z] = malloc(M_SIZE);
+			}
+		}
+
+		{
+			CTLSPerformanceProfiler profiler(L"free");
+
+			for (int z = 0; z < 1000; ++z) {
+				free(memories[z]);
+			}
+		}
 	}
 
-	void* operator new[](size_t size)
-	{
-		return mFreeListManager.Alloc(size);
+	return 1;
+}
+
+unsigned WorkerThread2(void* p) {
+
+	WaitForSingleObject(gEvent, INFINITE);
+
+	void* memories[1000];
+
+	for (int i = 0; i < 10000; ++i) {
+
+		{
+			CTLSPerformanceProfiler profiler(L"Alloc");
+
+			for (int z = 0; z < 1000; ++z) {
+				memories[z] = gMemoryFreeList.Alloc(M_SIZE);
+			}
+		}
+
+		{
+			CTLSPerformanceProfiler profiler(L"Free");
+
+			for (int z = 0; z < 1000; ++z) {
+				gMemoryFreeList.Free(memories[z]);
+			}
+		}
 	}
 
-
-	void operator delete(void* ptr)
-	{
-		mFreeListManager.Free(ptr);
-
-		return;
-	}
-
-	void operator delete[](void* ptr)
-	{
-		mFreeListManager.Free(ptr);
-	}
-
-private:
-
-	long long num1;
-	long long num2;
-	long long num3;
-
-	static CLockFreeFreeListManager mFreeListManager;
-};
-
-CLockFreeFreeListManager A::mFreeListManager;
-
-
-class B : public A
-{
-public:
-
-	B()
-		:num4()
-		,num5()
-	{}
-
-	~B() = default;
-
-	long long num4;
-	long long num5;
-};
+	return 1;
+}
 
 
 int main()
 {
+	LARGE_INTEGER l;
+	QueryPerformanceFrequency(&l);
 
-	B* p = new B;
+	std::cout << l.QuadPart;
 
-	std::cout << p->num4 << "\n";
+	//CTLSPerformanceProfiler::SetPerformanceProfiler(L"Alloc, Free 2000", THREAD_COUNT);
 
-	delete[] p;
+	//gEvent = CreateEvent(nullptr, true, false, nullptr);
+
+	//for (int i = 0; i < THREAD_COUNT; ++i) {
+	//	handles[i] = (HANDLE)_beginthreadex(nullptr, 0, (_beginthreadex_proc_type)WorkerThread2, nullptr, 0, nullptr);
+	//}
+
+	//Sleep(2000);
+
+	//std::cout << "Start";
+
+	//SetEvent(gEvent);
+
+	//WaitForMultipleObjects(THREAD_COUNT, handles, true, INFINITE);
+	//CTLSPerformanceProfiler::PrinteTotalPerformanceProfile();
 
 	return 1;
 }

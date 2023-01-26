@@ -13,11 +13,11 @@ int wmain()
 {
     CTLSPerformanceProfiler::SetPerformanceProfiler(L"AStar", 1);
 
-    TestPathFind(L"C:\\Users\\jch35\\OneDrive\\바탕 화면\\Project\\Library\\JumpPointSearchLibrary\\Map\\Map_1", L"Map_1 PathFind");
+    TestPathFind(L"C:\\Users\\jch35\\OneDrive\\바탕 화면\\Project\\GDB\\JumpPointSearch\\Map\\Map_1", L"Map_1 PathFind");
 
-    TestPathFind(L"C:\\Users\\jch35\\OneDrive\\바탕 화면\\Project\\Library\\JumpPointSearchLibrary\\Map\\Map_2", L"Map_2 PathFind");
+    TestPathFind(L"C:\\Users\\jch35\\OneDrive\\바탕 화면\\Project\\GDB\\JumpPointSearch\\Map\\Map_2", L"Map_2 PathFind");
 
-    TestPathFind(L"C:\\Users\\jch35\\OneDrive\\바탕 화면\\Project\\Library\\JumpPointSearchLibrary\\Map\\Map_3", L"Map_3 PathFind");
+    TestPathFind(L"C:\\Users\\jch35\\OneDrive\\바탕 화면\\Project\\GDB\\JumpPointSearch\\Map\\Map_3", L"Map_3 PathFind");
 
     CTLSPerformanceProfiler::PrintPerformanceProfile();
     CTLSPerformanceProfiler::FreePerformanceProfiler();

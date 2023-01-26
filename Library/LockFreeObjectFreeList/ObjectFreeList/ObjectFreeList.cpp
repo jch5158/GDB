@@ -12,7 +12,22 @@
 
 #define dfOBJECT_COUNT 3
 
-CLockFreeObjectFreeList<CTest1> gFreeList(0, TRUE);
+class CPlayer {
+public:
+
+	CPlayer(){}
+
+	~CPlayer(){}
+
+	int arr[50];
+};
+
+
+constexpr int THREAD_COUNT = 6;
+HANDLE gEvent;
+HANDLE handles[THREAD_COUNT];
+
+CTLSLockFreeObjectFreeList<CPlayer> gFreeList(6, TRUE);
 
 // 0. Alloc (스레드당 10000 개 x 10 개 스레드 총 10만개)
 // 1. 0x0000000055555555 과 0 이 맞는지 확인.
@@ -105,31 +120,33 @@ CLockFreeObjectFreeList<CTest1> gFreeList(0, TRUE);
 //	return;
 //}
 
-constexpr int THREAD_COUNT = 6;
-HANDLE gEvent;
-HANDLE handles[THREAD_COUNT];
-
 unsigned TestThread(void* p) {
 
 	WaitForSingleObject(gEvent, INFINITE);
 
-	CTest1* test[1000];
+	CPlayer* test[1000];
 
-	for (int i = 0; i < 100000; ++i) {
-
+	for (int i = 0; i < 10000; ++i) 
+	{
 		{
 			CTLSPerformanceProfiler performance(L"Alloc");
 
-			for (int z = 0; z < 100; ++z) {
+			for (int z = 0; z < 1000; ++z)
+			{
 				test[z] = gFreeList.Alloc();
+
+				//test[z] = new CPlayer;
 			}
 		}
 
 		{
 			CTLSPerformanceProfiler performance(L"Free");
 
-			for (int z = 0; z < 100; ++z) {
+			for (int z = 0; z < 1000; ++z) 
+			{
 				gFreeList.Free(test[z]);
+
+				// delete test[z];
 			}
 		}
 	}
@@ -137,38 +154,12 @@ unsigned TestThread(void* p) {
 	return 1;
 }
 
-unsigned FreeThread(void* p) {
-
-	WaitForSingleObject(gEvent, INFINITE);
-
-	for (int i = 0; i < 10000; ++i) {
-
-		for (int z = 0; z < 100; ++z) {
-
-		}
-	}
-
-	return 1;
-}
-
-unsigned WorkerThread(void* p) {
-
-	while (true) {
-		void* p = malloc(500);
-
-		free(p);
-	}
-}
 
 int wmain()
 {	
 	CCrashDump::GetInstance();
-	CTLSPerformanceProfiler::SetPerformanceProfiler(L"ObjectFreeList", 6);
+	CTLSPerformanceProfiler::SetPerformanceProfiler(L"TLSLockFreeFreeList", 6);
 	gEvent = CreateEvent(nullptr, true, false, nullptr);
-
-	_beginthreadex(nullptr, 0, (_beginthreadex_proc_type)WorkerThread, nullptr, 0, nullptr);
-	_beginthreadex(nullptr, 0, (_beginthreadex_proc_type)WorkerThread, nullptr, 0, nullptr);
-	_beginthreadex(nullptr, 0, (_beginthreadex_proc_type)WorkerThread, nullptr, 0, nullptr);
 
 	for (int i = 0; i < THREAD_COUNT; ++i) {
 		handles[i] = (HANDLE)_beginthreadex(nullptr, 0, (_beginthreadex_proc_type)TestThread, nullptr, 0, nullptr);
@@ -179,6 +170,7 @@ int wmain()
 	SetEvent(gEvent);
 
 	WaitForMultipleObjects(THREAD_COUNT, handles, true, INFINITE);
+
 	CTLSPerformanceProfiler::PrinteTotalPerformanceProfile();
 
 	//_getch();
