@@ -77,7 +77,7 @@ public:
 	void Push(DATA data)
 	{
 		stNode* newNode = mpNodeFreeList->Alloc();
-
+		
 		newNode->mData = data;
 
 		stNode* pTempTopNode;

@@ -14,7 +14,7 @@ CAStar::CAStar(int mapWidth, int mapHeight)
 	
 	, mDestinationNode{ 0, }
 
-	, mOpenList()
+	, mOpenQueue()
 	, mMap()
 {
 	mMap.resize(mapHeight);
@@ -50,7 +50,7 @@ bool CAStar::PathFind(int startX, int startY, int destinationX, int destinationY
 
 
 	// 출발지 노드를 openList에 추가한다.
-	mOpenList.push_back(pStartNode);
+	mOpenQueue.push(pStartNode);
 
 	for (;;)
 	{
@@ -61,7 +61,9 @@ bool CAStar::PathFind(int startX, int startY, int destinationX, int destinationY
 		{
 			setRouteArray(pOpenListNode, route);
 
-			mOpenList.clear();
+			while (!mOpenQueue.empty()) {
+				mOpenQueue.pop();
+			}
 
 			resetNodeState();
 
@@ -69,12 +71,11 @@ bool CAStar::PathFind(int startX, int startY, int destinationX, int destinationY
 		}
 
 		findRoute(pOpenListNode);
-
-		// node의 F 값을 기준으로 오름 차순 정렬을 한다.
-		mOpenList.sort(CAscendingOrder());
 	}
 
-	mOpenList.clear();
+	while (!mOpenQueue.empty()) {
+		mOpenQueue.pop();
+	}
 
 	resetNodeState();
 
@@ -144,7 +145,7 @@ void CAStar::createNode(int x, int y, stNode* pParentNode)
 		pOpenListNode->F = pOpenListNode->G + pOpenListNode->H;
 
 		pOpenListNode->nodeState = eNodeState::NODE_OPENED;
-		mOpenList.push_back(pOpenListNode);
+		mOpenQueue.push(pOpenListNode);
 	}
 	else
 	{
@@ -162,14 +163,12 @@ void CAStar::createNode(int x, int y, stNode* pParentNode)
 
 CAStar::stNode* CAStar::findOpenNode(void)
 {
-	const auto& iter = mOpenList.begin();
-	if (iter == mOpenList.end())
+	if (mOpenQueue.empty()) {
 		return nullptr;
+	}
 
-	stNode* pNode = *iter;
-
-	// openList에서 제거한다.
-	mOpenList.erase(iter);
+	stNode* pNode = mOpenQueue.top();
+	mOpenQueue.pop();
 
 	// openList에서 뽑은 node는 CLOSED 상태로 변경한다.
 	mMap[pNode->y][pNode->x].nodeState = eNodeState::NODE_CLOSED;

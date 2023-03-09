@@ -18,5 +18,7 @@ public:
 	INT64 mData;
 
 	LONG mCount;
+
+	int arr[500];
 };
 

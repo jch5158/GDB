@@ -123,8 +123,8 @@ public:
 			tailTemp.pointerHighPart = mTail.pointerHighPart;
 
 			// 테일의 Next가 nullptr이 아닐 경우 테일을 밀어주는 작업을 한다.
-			if (tailTemp.pointerHighPart->mpNextNode == nullptr)
-			{
+			if (tailTemp.pointerHighPart->mpNextNode == nullptr) 
+			{ 
 				if ((long long)nullptr == InterlockedCompareExchange64((long long*)&tailTemp.pointerHighPart->mpNextNode, (long long)pNewNode, (long long)nullptr))
 				{
 					// 이 코드에서 밀지 못하는 건 어쩔 수 없음 다음 Enqueue, Dequeue 가 밀어줄 상황이다. 

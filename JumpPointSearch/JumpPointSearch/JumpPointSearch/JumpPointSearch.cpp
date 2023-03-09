@@ -13,11 +13,11 @@ int wmain()
 {
     CTLSPerformanceProfiler::SetPerformanceProfiler(L"JumpPointSearch", 1);
 
-    TestPathFind(L"..\\..\\..\\Map\\Map_1", L"Map_1 PathFind");
+    TestPathFind(L"..\\..\\Map\\Map_1", L"Map_1 PathFind");
 
-    TestPathFind(L"..\\..\\..\\Map\\Map_2", L"Map_2 PathFind");
+    TestPathFind(L"..\\..\\Map\\Map_2", L"Map_2 PathFind");
 
-    TestPathFind(L"..\\..\\..\\Map\\Map_3", L"Map_3 PathFind");
+    TestPathFind(L"..\\..\\Map\\Map_3", L"Map_3 PathFind");
 
     CTLSPerformanceProfiler::PrintPerformanceProfile();
     CTLSPerformanceProfiler::FreePerformanceProfiler();

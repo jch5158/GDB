@@ -15,7 +15,7 @@ CJumpPointSearch::CJumpPointSearch(int mapWidth, int mapHeight)
 
 	, mDestinationNode{ 0, }
 
-	, mOpenList()
+	, mOpenQueue()
 	
 	, mJspMap()
 
@@ -77,7 +77,8 @@ bool CJumpPointSearch::PathFind(int startX, int startY, int destX, int destY, st
 	mDestinationNode.y = destY;
 
 	// 오픈 리스트에 추가
-	mOpenList.push_back(pStartNode);
+	// mOpenList.push_back(pStartNode);
+	mOpenQueue.push(pStartNode);
 
 	for (;;)
 	{
@@ -90,7 +91,9 @@ bool CJumpPointSearch::PathFind(int startX, int startY, int destX, int destY, st
 			setRouteArray(curNode, route);
 
 			// 오픈 리스트 정리
-			mOpenList.clear();
+			while (!mOpenQueue.empty()) {
+				mOpenQueue.pop();
+			}
 
 			// close 리스트 정리
 			resetNodeState();
@@ -100,13 +103,12 @@ bool CJumpPointSearch::PathFind(int startX, int startY, int destX, int destY, st
 
 		// 길 찾기 로직 시작
 		findRoute(curNode);
-
-		// openList F값 정렬
-		mOpenList.sort(CAscendingOrder());
 	}
 
 	// 오픈 리스트 정리
-	mOpenList.clear();
+	while (!mOpenQueue.empty()) {
+		mOpenQueue.pop();
+	}
 
 	// close 리스트 정리
 	resetNodeState();
@@ -120,22 +122,17 @@ bool CJumpPointSearch::PathFind(int startX, int startY, int destX, int destY, st
 //================================================================
 CJumpPointSearch::stNode* CJumpPointSearch::findOpenNode()
 {
-	// F값이 작은 순서로 정렬해놨기 때문에 begin값을 뽑으면 첫 노드를 뽑을 수 있다.
-	const auto& iter = mOpenList.begin();
-
-	// 오픈리스트가 없다면은 nullptr return 한다.
-	if (iter == mOpenList.end())
+	if (mOpenQueue.empty()) {
 		return nullptr;
+	}
 
 	// 노드 포인터를 복사한다.
-	stNode* node = *iter;
+	stNode* pNode = mOpenQueue.top();
+	mOpenQueue.pop();
 
-	// 오픈 리스트에서 해당 노드를 지운다.
-	mOpenList.erase(iter);
+	mJspMap[pNode->y][pNode->x].nodeState = eNodeState::NODE_CLOSED;
 
-	mJspMap[node->y][node->x].nodeState = eNodeState::NODE_CLOSED;
-
-	return node;
+	return pNode;
 }
 
 
@@ -238,7 +235,7 @@ void CJumpPointSearch::setNewNode(stNode* pParentNode, eNodeDirection nodeDir, i
 
 		pOpenListNode->nodeState = eNodeState::NODE_OPENED;
 
-		mOpenList.push_back(pOpenListNode);
+		mOpenQueue.push(pOpenListNode);
 	}
 	else
 	{

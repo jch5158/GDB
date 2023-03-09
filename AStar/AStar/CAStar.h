@@ -52,7 +52,6 @@ private:
 		CAscendingOrder(void) = default;
 		~CAscendingOrder(void) = default;	
 
-		CAscendingOrder(const CAscendingOrder&) = delete;
 		CAscendingOrder& operator=(const CAscendingOrder&) = delete;
 
 		bool operator()(const stNode* pLeft, const stNode* pRight) const;
@@ -102,7 +101,7 @@ private:
 
 	stNode mDestinationNode;
 
-	std::list<stNode*> mOpenList;
+	std::priority_queue<stNode*, std::vector<stNode*>, CAscendingOrder> mOpenQueue;
 	std::vector<std::vector<stNode>> mMap;
 };
 

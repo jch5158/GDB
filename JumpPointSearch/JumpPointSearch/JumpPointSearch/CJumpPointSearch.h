@@ -74,7 +74,6 @@ private:
         CAscendingOrder(void) = default;
 		~CAscendingOrder(void) = default;
 
-        CAscendingOrder(const CAscendingOrder&) = delete;
         CAscendingOrder& operator=(const CAscendingOrder&) = delete;
 
 		bool operator()(const stNode* pLeft, const stNode* pRight) const;
@@ -150,7 +149,8 @@ private:
 
 	stNode mDestinationNode;       // 목적지 노드 좌표
 
-	std::list<stNode*> mOpenList;  // 아직 탐색을 하지 않은 Node List
+	// std::list<stNode*> mOpenList;  // 아직 탐색을 하지 않은 Node List
+    std::priority_queue<stNode*, std::vector<stNode*>, CAscendingOrder> mOpenQueue;
 
 	std::vector<std::vector<stNode>> mJspMap;
 };
