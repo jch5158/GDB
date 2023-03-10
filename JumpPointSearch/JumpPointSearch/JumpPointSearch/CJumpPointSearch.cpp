@@ -4,7 +4,7 @@
 
 bool CJumpPointSearch::CAscendingOrder::operator()(const stNode* pLeft, const stNode* pRight) const
 {
-	return pLeft->F < pRight->F;
+	return pLeft->F > pRight->F;
 }
 
 
