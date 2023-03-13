@@ -86,7 +86,7 @@ LRESULT gComboBoxNumber = -1;
 
 void SaveMap(void);
 
-void SaveToFile(const WCHAR* fileName);
+void SaveToFile(std::wstring path, std::wstring fileName);
 
 void LoadMap(void);
 
@@ -624,19 +624,20 @@ void SaveMap(void)
     {
     case 0:
 
-        SaveToFile(L"..\\..\\Map\\Map_1");
+        //SaveToFile(L"..\\..\\Map\\Map_1");
+        SaveToFile(L".\\Map", L"Map_1");
 
     break;
 
     case 1:
         
-        SaveToFile(L"..\\..\\Map\\Map_2");
+        SaveToFile(L".\\Map", L"Map_2");
 
     break;
 
     case 2:
 
-        SaveToFile(L"..\\..\\Map\\Map_3");
+        SaveToFile(L".\\Map", L"Map_3");
 
     break; 
     
@@ -647,7 +648,7 @@ void SaveMap(void)
 
 }
 
-void SaveToFile(const WCHAR* fileName)
+void SaveToFile(std::wstring path, std::wstring fileName)
 {
     ZeroMemory(mapBuffer, sizeof(mapBuffer));
 
@@ -675,9 +676,18 @@ void SaveToFile(const WCHAR* fileName)
         }
     }
 
+
+    if (!PathFileExists(path.c_str())) {
+        bool result = CreateDirectory(path.c_str(), nullptr);
+        if (!result) {
+            MessageBox(hWnd, L"맵 저장에 실패하였습니다.", L"Button", MB_OK);
+            return;
+        }
+    }
+
     FILE* fp = nullptr;
 
-    _wfopen_s(&fp, fileName, L"wb");
+    _wfopen_s(&fp, (path + L"\\" + fileName).c_str(), L"wb");
 
     if (fp == nullptr)
     {
@@ -700,19 +710,22 @@ void LoadMap(void)
     {
     case 0:
 
-        ReadMapFile(L"..\\..\\Map\\Map_1");
+        //ReadMapFile(L"..\\..\\Map\\Map_1");
+        ReadMapFile(L".\\Map\\Map_1");
 
         break;
 
     case 1:
 
-        ReadMapFile(L"..\\..\\Map\\Map_2");
+        //ReadMapFile(L"..\\..\\Map\\Map_2");
+        ReadMapFile(L".\\Map\\Map_2");
 
         break;
 
     case 2:
 
-        ReadMapFile(L"..\\..\\Map\\Map_3");
+        //ReadMapFile(L"..\\..\\Map\\Map_3");
+        ReadMapFile(L".\\Map\\Map_3");
 
         break;
 

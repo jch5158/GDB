@@ -15,6 +15,9 @@
 #include <time.h>
 #include <tchar.h>
 #include <locale>
+#include <Shlwapi.h>
+
+#pragma comment(lib, "Shlwapi.lib")
 
 struct RouteNode
 {

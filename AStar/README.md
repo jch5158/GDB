@@ -1,10 +1,22 @@
 # A\* Search
 
+<br>
+
 - A\* Search 길 찾기 알고리즘입니다.
 
-- A_Star_Algorithm.exe 를 실행하여 길 찾기 테스트를 하실 수 있습니다.
+<br>
+
+- A_Star_Algorithm.exe를 통해 테스트하실 수 있습니다.
+
+<br>
+
+- https://www.youtube.com/watch?v=F5DdW54S2Ko 시연 영상입니다.
+
+<br><br><br>
 
 # 사용방법
+
+<br>
 
 - 왼쪽 클릭 : 출발지 설정
 
@@ -17,3 +29,5 @@
 - Enter : 탐색 시작
 
 - Space : 초기화
+
+<br><br><br>
