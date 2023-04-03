@@ -669,9 +669,9 @@ void CNetServer::setupWorkerThreads(void)
 	mpWorkerThreadsID = new unsigned int[mWorkerThreadCount];
 
 	mpWakeupProcessTimeArray = new unsigned int[mWorkerThreadCount];
-	ZeroMemory(mpWakeupProcessTimeArray, sizeof(new unsigned int) * mWorkerThreadCount);
+	ZeroMemory(mpWakeupProcessTimeArray, sizeof(unsigned int) * mWorkerThreadCount);
 	mpWakeupWaitTimeArray = new unsigned int[mWorkerThreadCount];
-	ZeroMemory(mpWakeupWaitTimeArray, sizeof(new unsigned int) * mWorkerThreadCount);
+	ZeroMemory(mpWakeupWaitTimeArray, sizeof(unsigned int) * mWorkerThreadCount);
 
 	for (int index = 0; index < mWorkerThreadCount; ++index)
 		mpWorkerThreadHandles[index] = (HANDLE)_beginthreadex(nullptr, 0, (_beginthreadex_proc_type)ExecuteWorkerThread, this, NULL, &mpWorkerThreadsID[index]);
