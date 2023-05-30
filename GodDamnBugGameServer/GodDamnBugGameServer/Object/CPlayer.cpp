@@ -1615,7 +1615,7 @@ BOOL CPlayer::getAttack2VictimMonster(CMonster** pVictimMonster)
 
 	for (INT count = 0; count < sectorAround.count; ++count)
 	{
-		for (const auto& iter : *mpGodDamnBug->FindMonsterSectorMap(sectorAround.around[count].posX, sectorAround.around[count].posY))
+		for (const auto iter : *mpGodDamnBug->FindMonsterSectorMap(sectorAround.around[count].posX, sectorAround.around[count].posY))
 		{
 			if (iter.second->GetTileX() >= collisionBox.pointOne.tileX && iter.second->GetTileY() >= collisionBox.pointOne.tileY
 				&& iter.second->GetTileX() <= collisionBox.pointTwo.tileX && iter.second->GetTileY() <= collisionBox.pointTwo.tileY)
@@ -1630,21 +1630,21 @@ BOOL CPlayer::getAttack2VictimMonster(CMonster** pVictimMonster)
 	return FALSE;
 }
 
-
+//
 //BOOL CPlayer::getAttack2VictimMonsters(CMonster** pVictimMonsterArray, DWORD arrayLength, DWORD* pFindVictimMonsterCount, CGodDamnBug::stSectorAround16* pSectorAround16)
 //{
 //	BOOL bFindFlag = FALSE;
 //
-//	CGodDamnBug::stCollisionBox collisionBox;
-//	CGodDamnBug::GetAttackCollisionBox(mRotation, mTileX, mTileY, PLAYER_ATTACK2_RANGE, &collisionBox);
+//	stCollisionBox collisionBox;
+//	goddamnbug::GetAttackCollisionBox(mRotation, mTileX, mTileY, PLAYER_ATTACK2_RANGE, &collisionBox);
 //
-//	CGodDamnBug::GetAttackSectorAround16(mRotation, mCurSector, pSectorAround16);
+//	goddamnbug::GetAttackSectorAround16(mRotation, mCurSector, pSectorAround16);
 //
 //	INT findPlayerCount = 0;
 //
 //	for (INT count = 0; count < pSectorAround16->count; ++count)
 //	{
-//		for (auto& iter : mpGodDamnBug->mMonsterSectorMap[pSectorAround16->around[count].posY][pSectorAround16->around[count].posX])
+//		for (const auto iter : mpGodDamnBug->mMonsterSectorMap[pSectorAround16->around[count].posY][pSectorAround16->around[count].posX])
 //		{
 //			if (iter.second->mTileX >= collisionBox.pointOne.tileX && iter.second->mTileY >= collisionBox.pointOne.tileY
 //				&& iter.second->mTileX <= collisionBox.pointTwo.tileX && iter.second->mTileY <= collisionBox.pointTwo.tileY)
